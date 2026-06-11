@@ -1,4 +1,4 @@
-# Documentación — Entity Gap (SEO/GEO con IA)
+# Documentación — ai-entity-gap-seo (gaps de entidades para SEO/GEO con IA)
 
 Sistema que coge tu archivo de contenido, detecta **sobre qué temas hay demanda que
 no cubres** y te devuelve un **backlog editorial priorizado** — repetible, auditable

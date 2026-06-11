@@ -1,4 +1,4 @@
-# Entity Gap — SEO/GEO con IA
+# ai-entity-gap-seo — análisis de gaps de entidades para SEO/GEO con IA
 
 Sistema **repetible y escalable** para detectar oportunidades de contenido (gaps
 de entidades) y priorizar un backlog editorial, partiendo de tu propio archivo de
