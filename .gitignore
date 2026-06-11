@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.usage/
+config/config.yml
+outputs/*.html

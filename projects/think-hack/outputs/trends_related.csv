@@ -1,0 +1,554 @@
+seed,seed_type,kind,rank,term,term_norm,value
+ia,concept,query,top,la ia,la ia,100.0
+ia,concept,query,top,ia gratis,ia gratis,59.0
+ia,concept,query,top,google ia,google ia,46.0
+ia,concept,query,top,ia detector,ia detector,46.0
+ia,concept,query,top,detector de ia,detector de ia,37.0
+ia,concept,query,top,ai,ai,36.0
+ia,concept,query,top,ia imagenes,ia imagenes,31.0
+ia,concept,query,top,gemini ia,gemini ia,30.0
+ia,concept,query,top,ia video,ia video,25.0
+ia,concept,query,top,ia chat,ia chat,25.0
+ia,concept,query,top,chat ia,chat ia,24.0
+ia,concept,query,top,ia chatgpt,ia chatgpt,23.0
+ia,concept,query,top,ia fotos,ia fotos,23.0
+ia,concept,query,top,modo ia,modo ia,23.0
+ia,concept,query,top,ia videos,ia videos,23.0
+ia,concept,query,top,mejor ia,mejor ia,22.0
+ia,concept,query,top,imagen ia,imagen ia,20.0
+ia,concept,query,top,ia de google,ia de google,18.0
+ia,concept,query,top,ia gpt,ia gpt,18.0
+ia,concept,query,top,ia de imagenes,ia de imagenes,15.0
+ia,concept,query,top,chat gpt ia,chat gpt ia,15.0
+ia,concept,query,top,que es la ia,que es la ia,14.0
+ia,concept,query,top,humanizador,humanizador,13.0
+ia,concept,query,top,humanizador ia,humanizador ia,13.0
+ia,concept,query,top,humanizador de ia,humanizador de ia,13.0
+ia,concept,query,rising,nano banana ia,nano banana ia,32000.0
+ia,concept,query,rising,nano banana,nano banana,14400.0
+ia,concept,query,rising,google modo ia,google modo ia,6650.0
+ia,concept,query,rising,banana ia,banana ia,5050.0
+ia,concept,query,rising,proxus ia,proxus ia,4650.0
+ia,concept,query,rising,modo ia,modo ia,4050.0
+ia,concept,query,rising,astra ia,astra ia,3750.0
+ia,concept,query,rising,nanobanana,nanobanana,3600.0
+ia,concept,query,rising,astra ai,astra ai,2950.0
+ia,concept,query,rising,alex ia legal,alex ia legal,2700.0
+ia,concept,query,rising,mode ia,mode ia,600.0
+ia,concept,query,rising,claude ia,claude ia,300.0
+ia,concept,query,rising,kimi ia,kimi ia,300.0
+ia,concept,query,rising,maite ia,maite ia,300.0
+ia,concept,query,rising,alex ia,alex ia,250.0
+ia,concept,query,rising,flow ia,flow ia,200.0
+ia,concept,query,rising,cual es la mejor ia,cual es la mejor ia,200.0
+ia,concept,query,rising,oreate ia,oreate ia,190.0
+ia,concept,query,rising,notebook ia,notebook ia,180.0
+ia,concept,query,rising,ia studio google,ia studio google,180.0
+ia,concept,query,rising,google ai studio,google ai studio,140.0
+ia,concept,query,rising,gemini ia,gemini ia,130.0
+ia,concept,query,rising,geminis ia gratis,geminis ia gratis,120.0
+ia,concept,query,rising,gafas ia,gafas ia,110.0
+ia,concept,query,rising,grok ai,grok ai,100.0
+ia,concept,topic,top,Artificial intelligence,artificial intelligence,100.0
+ia,concept,topic,top,Image,image,8.0
+ia,concept,topic,top,Detector,detector,6.0
+ia,concept,topic,top,Gemini,gemini,6.0
+ia,concept,topic,top,free,free,5.0
+ia,concept,topic,top,Text,text,3.0
+ia,concept,topic,top,Electric generator,electric generator,2.0
+ia,concept,topic,top,Intelligence,intelligence,1.0
+ia,concept,topic,top,Claude,claude,1.0
+ia,concept,topic,top,Human voice,human voice,1.0
+ia,concept,topic,top,AI Mode,ai mode,1.0
+ia,concept,topic,top,Grok,grok,1.0
+ia,concept,topic,top,Humanize AI,humanize ai,1.0
+ia,concept,topic,top,command prompt,command prompt,0.0
+ia,concept,topic,top,Google AI Studio,google ai studio,0.0
+ia,concept,topic,top,Perplexity,perplexity,0.0
+ia,concept,topic,rising,AI Mode,ai mode,86850.0
+ia,concept,topic,rising,Humanize AI,humanize ai,49700.0
+ia,concept,topic,rising,Google AI Studio,google ai studio,24900.0
+ia,concept,topic,rising,Claude,claude,350.0
+ia,concept,topic,rising,Perplexity,perplexity,300.0
+ia,concept,topic,rising,command prompt,command prompt,300.0
+ia,concept,topic,rising,free,free,250.0
+ia,concept,topic,rising,Gemini,gemini,120.0
+ia,concept,topic,rising,Grok,grok,110.0
+chatgpt,tool,query,top,chatgpt gratis,chatgpt gratis,100.0
+chatgpt,tool,query,top,ia chatgpt,ia chatgpt,51.0
+chatgpt,tool,query,top,chatgpt gpt,chatgpt gpt,51.0
+chatgpt,tool,query,top,chatgpt ai,chatgpt ai,47.0
+chatgpt,tool,query,top,chatgpt español,chatgpt español,47.0
+chatgpt,tool,query,top,chatgpt españa,chatgpt españa,41.0
+chatgpt,tool,query,top,chatgpt openai,chatgpt openai,40.0
+chatgpt,tool,query,top,chatgpt online,chatgpt online,32.0
+chatgpt,tool,query,top,chatgpt plus,chatgpt plus,28.0
+chatgpt,tool,query,top,chatgpt login,chatgpt login,20.0
+chatgpt,tool,query,top,chatgpt app,chatgpt app,20.0
+chatgpt,tool,query,top,chatgpt free,chatgpt free,19.0
+chatgpt,tool,query,top,chatgpt business,chatgpt business,10.0
+chatgpt,tool,query,top,codex chatgpt,codex chatgpt,5.0
+chatgpt,tool,query,top,sora chatgpt,sora chatgpt,4.0
+chatgpt,tool,query,rising,codex chatgpt,codex chatgpt,1050.0
+chatgpt,tool,query,rising,chatgpt business,chatgpt business,250.0
+chatgpt,tool,query,rising,chatgpt plus,chatgpt plus,110.0
+chatgpt,tool,query,rising,sora chatgpt,sora chatgpt,100.0
+chatgpt,tool,query,rising,chatgpt openai,chatgpt openai,70.0
+chatgpt,tool,query,rising,chatgpt app,chatgpt app,60.0
+chatgpt,tool,topic,top,ChatGPT,chatgpt,100.0
+chatgpt,tool,topic,top,OpenAI,openai,1.0
+chatgpt,tool,topic,rising,OpenAI,openai,40.0
+memoria,concept,query,top,la memoria,la memoria,100.0
+memoria,concept,query,top,memoria ram,memoria ram,29.0
+memoria,concept,query,top,ram,ram,28.0
+memoria,concept,query,top,tarjeta memoria,tarjeta memoria,15.0
+memoria,concept,query,top,que es la memoria,que es la memoria,12.0
+memoria,concept,query,top,tarjeta de memoria,tarjeta de memoria,12.0
+memoria,concept,query,top,ejercicios memoria,ejercicios memoria,7.0
+memoria,concept,query,top,memoria juegos,memoria juegos,7.0
+memoria,concept,query,top,usb,usb,6.0
+memoria,concept,query,top,memoria de españa,memoria de españa,6.0
+memoria,concept,query,top,memoria usb,memoria usb,6.0
+memoria,concept,query,top,ejercicios de memoria,ejercicios de memoria,5.0
+memoria,concept,query,top,juegos de memoria,juegos de memoria,4.0
+memoria,concept,query,top,juego de memoria,juego de memoria,4.0
+memoria,concept,query,top,memoria democrática,memoria democrática,4.0
+memoria,concept,query,top,memoria externa,memoria externa,4.0
+memoria,concept,query,top,memoria sd,memoria sd,4.0
+memoria,concept,query,top,memoria de madrid,memoria de madrid,4.0
+memoria,concept,query,top,memoria democratica,memoria democratica,3.0
+memoria,concept,query,top,memoria historica,memoria historica,3.0
+memoria,concept,query,top,disco duro,disco duro,3.0
+memoria,concept,query,top,perdida de memoria,perdida de memoria,3.0
+memoria,concept,query,top,memoria de trabajo,memoria de trabajo,3.0
+memoria,concept,query,top,ssd,ssd,3.0
+memoria,concept,query,top,memoria ssd,memoria ssd,3.0
+memoria,concept,query,rising,memoria rosalia letra,memoria rosalia letra,17150.0
+memoria,concept,query,rising,tu rostro siempre en mi memoria,tu rostro siempre en mi memoria,12650.0
+memoria,concept,query,rising,rosalia memoria,rosalia memoria,4050.0
+memoria,concept,query,rising,consolidación de la memoria,consolidación de la memoria,1200.0
+memoria,concept,query,rising,sede electrónica del ministerio de política territorial y memoria democrática,sede electrónica del ministerio de política territorial y memoria democrática,850.0
+memoria,concept,query,rising,preservar la memoria arc raiders,preservar la memoria arc raiders,850.0
+memoria,concept,query,rising,en algun lugar de la memoria,en algun lugar de la memoria,550.0
+memoria,concept,query,rising,memoria ram ddr5 32gb,memoria ram ddr5 32gb,400.0
+memoria,concept,query,rising,memoria ram ddr5 16gb,memoria ram ddr5 16gb,400.0
+memoria,concept,query,rising,memoria de un asesino serie,memoria de un asesino serie,350.0
+memoria,concept,query,rising,memoria ram ddr5,memoria ram ddr5,200.0
+memoria,concept,query,rising,ministerio de política territorial y memoria democrática,ministerio de política territorial y memoria democrática,140.0
+memoria,concept,query,rising,ejercicios de memoria con soluciones,ejercicios de memoria con soluciones,110.0
+memoria,concept,query,rising,memoria ram ddr4 16gb,memoria ram ddr4 16gb,100.0
+memoria,concept,query,rising,precio memoria ram,precio memoria ram,90.0
+memoria,concept,query,rising,memoria ram ddr4 32gb,memoria ram ddr4 32gb,90.0
+memoria,concept,query,rising,memoria de españa,memoria de españa,70.0
+memoria,concept,query,rising,coolmod,coolmod,60.0
+memoria,concept,query,rising,memoria ram ddr4,memoria ram ddr4,50.0
+memoria,concept,topic,top,Computer data storage,computer data storage,42.0
+memoria,concept,topic,top,Random-access memory,random-access memory,18.0
+memoria,concept,topic,top,Memory card,memory card,9.0
+memoria,concept,topic,top,Exercise,exercise,5.0
+memoria,concept,topic,top,Computer,computer,5.0
+memoria,concept,topic,top,USB,usb,4.0
+memoria,concept,topic,top,USB flash drive,usb flash drive,3.0
+memoria,concept,topic,top,Amnesia,amnesia,3.0
+memoria,concept,topic,top,Hard disk drive,hard disk drive,3.0
+memoria,concept,topic,top,Central processing unit,central processing unit,3.0
+memoria,concept,topic,top,Memory,memory,3.0
+memoria,concept,topic,top,Historical culture,historical culture,3.0
+memoria,concept,topic,top,DDR5 SDRAM,ddr5 sdram,2.0
+memoria,concept,topic,top,32 GB,32 gb,2.0
+memoria,concept,topic,top,Ejerciciosdememoria,ejerciciosdememoria,1.0
+memoria,concept,topic,top,CORSAIR,corsair,1.0
+memoria,concept,topic,top,Memória,memória,1.0
+memoria,concept,topic,rising,Ejerciciosdememoria,ejerciciosdememoria,57500.0
+memoria,concept,topic,rising,Memória,memória,11800.0
+memoria,concept,topic,rising,DDR5 SDRAM,ddr5 sdram,150.0
+memoria,concept,topic,rising,32 GB,32 gb,80.0
+memoria,concept,topic,rising,CORSAIR,corsair,80.0
+deep research,concept,query,top,gemini deep research,gemini deep research,100.0
+deep research,concept,query,top,deep research ai,deep research ai,98.0
+deep research,concept,query,top,deep research chatgpt,deep research chatgpt,88.0
+deep research,concept,query,top,deep research google,deep research google,71.0
+deep research,concept,query,top,perplexity,perplexity,38.0
+deep research,concept,query,top,perplexity deep research,perplexity deep research,36.0
+deep research,concept,query,top,deep research que es,deep research que es,31.0
+deep research,concept,query,top,notebooklm,notebooklm,18.0
+deep research,concept,query,top,gemini ai deep research,gemini ai deep research,13.0
+deep research,concept,query,top,que es deep research en gemini,que es deep research en gemini,9.0
+deep research,concept,query,top,ai news today,ai news today,9.0
+deep research,concept,query,top,chat gpt deep research,chat gpt deep research,7.0
+deep research,concept,query,top,deep learning tutorials,deep learning tutorials,6.0
+deep research,concept,query,top,nano banana gemini,nano banana gemini,6.0
+deep research,concept,query,top,wikipedia,wikipedia,4.0
+deep research,concept,query,top,lidl near me,lidl near me,3.0
+deep research,concept,query,top,walmart near me,walmart near me,3.0
+deep research,concept,query,top,notebook lm,notebook lm,3.0
+deep research,concept,query,top,best deep conditioners,best deep conditioners,2.0
+deep research,concept,query,top,¿qué distingue al modelo deep research de otros?,qué distingue al modelo deep research de otros,2.0
+deep research,concept,query,top,how to deep clean kitchen,how to deep clean kitchen,1.0
+deep research,concept,query,top,best deep dish pizza in chicago,best deep dish pizza in chicago,1.0
+deep research,concept,query,rising,que es deep research en gemini,que es deep research en gemini,126300.0
+deep research,concept,query,rising,ai news today,ai news today,114300.0
+deep research,concept,query,rising,deep learning tutorials,deep learning tutorials,86450.0
+deep research,concept,query,rising,nano banana gemini,nano banana gemini,79350.0
+deep research,concept,query,rising,lidl near me,lidl near me,46850.0
+deep research,concept,query,rising,walmart near me,walmart near me,38000.0
+deep research,concept,query,rising,notebook lm,notebook lm,33900.0
+deep research,concept,query,rising,best deep conditioners,best deep conditioners,21300.0
+deep research,concept,query,rising,¿qué distingue al modelo deep research de otros?,qué distingue al modelo deep research de otros,20800.0
+deep research,concept,query,rising,how to deep clean kitchen,how to deep clean kitchen,19950.0
+deep research,concept,query,rising,best deep dish pizza in chicago,best deep dish pizza in chicago,15250.0
+deep research,concept,query,rising,notebooklm,notebooklm,250.0
+deep research,concept,query,rising,deep research que es,deep research que es,100.0
+deep research,concept,topic,top,Research,research,100.0
+deep research,concept,topic,top,ChatGPT Deep Research,chatgpt deep research,92.0
+deep research,concept,topic,top,2026,2026,63.0
+deep research,concept,topic,top,2025,2025,56.0
+deep research,concept,topic,top,Price,price,50.0
+deep research,concept,topic,top,Artificial intelligence,artificial intelligence,34.0
+deep research,concept,topic,top,Gemini,gemini,31.0
+deep research,concept,topic,top,News,news,27.0
+deep research,concept,topic,top,Review,review,25.0
+deep research,concept,topic,top,Deep learning,deep learning,23.0
+deep research,concept,topic,top,OpenAI,openai,22.0
+deep research,concept,topic,top,PDF,pdf,21.0
+deep research,concept,topic,top,2024,2024,21.0
+deep research,concept,topic,top,Learning,learning,20.0
+deep research,concept,topic,top,United Kingdom,united kingdom,19.0
+deep research,concept,topic,top,Company,company,19.0
+deep research,concept,topic,top,Data,data,19.0
+deep research,concept,topic,top,Cost,cost,18.0
+deep research,concept,topic,top,United States,united states,18.0
+deep research,concept,topic,top,Germany,germany,18.0
+deep research,concept,topic,top,Mobile app,mobile app,16.0
+deep research,concept,topic,top,2023,2023,15.0
+deep research,concept,topic,top,Health,health,14.0
+deep research,concept,topic,top,France,france,14.0
+deep research,concept,topic,top,Product,product,13.0
+deep research,concept,topic,rising,2026,2026,3051850.0
+deep research,concept,topic,rising,News,news,1318450.0
+deep research,concept,topic,rising,2023,2023,725750.0
+deep research,concept,topic,rising,France,france,656150.0
+deep research,concept,topic,rising,Product,product,640650.0
+deep research,concept,topic,rising,India,india,625000.0
+deep research,concept,topic,rising,Market,market,562400.0
+deep research,concept,topic,rising,Child,child,526500.0
+deep research,concept,topic,rising,December,december,516800.0
+deep research,concept,topic,rising,2022,2022,516800.0
+deep research,concept,topic,rising,School,school,506100.0
+deep research,concept,topic,rising,History,history,477600.0
+deep research,concept,topic,rising,January,january,450800.0
+deep research,concept,topic,rising,Türkiye,türkiye,448200.0
+deep research,concept,topic,rising,Location,location,445650.0
+deep research,concept,topic,rising,Japan,japan,445450.0
+deep research,concept,topic,rising,City,city,436200.0
+deep research,concept,topic,rising,Website,website,430750.0
+deep research,concept,topic,rising,2021,2021,428650.0
+deep research,concept,topic,rising,GitHub,github,414900.0
+deep research,concept,topic,rising,Documentation,documentation,408000.0
+deep research,concept,topic,rising,Apple,apple,402850.0
+deep research,concept,topic,rising,April,april,385600.0
+deep research,concept,topic,rising,Article,article,382300.0
+deep research,concept,topic,rising,February,february,364600.0
+claude code,tool,query,top,claude vs code,claude vs code,100.0
+claude code,tool,query,top,claude code vs code,claude code vs code,98.0
+claude code,tool,query,top,vs code,vs code,93.0
+claude code,tool,query,top,claude code anthropic,claude code anthropic,93.0
+claude code,tool,query,top,anthropic,anthropic,86.0
+claude code,tool,query,top,anthropic claude,anthropic claude,86.0
+claude code,tool,query,top,claude ai code,claude ai code,70.0
+claude code,tool,query,top,claude ai,claude ai,70.0
+claude code,tool,query,top,claude code price,claude code price,45.0
+claude code,tool,query,top,claude price,claude price,45.0
+claude code,tool,query,top,github claude code,github claude code,41.0
+claude code,tool,query,top,github,github,39.0
+claude code,tool,query,top,claude pro,claude pro,36.0
+claude code,tool,query,top,claude code pro,claude code pro,36.0
+claude code,tool,query,top,claude code review,claude code review,36.0
+claude code,tool,query,top,claude code docs,claude code docs,35.0
+claude code,tool,query,top,claude mcp,claude mcp,34.0
+claude code,tool,query,top,claude code mcp,claude code mcp,34.0
+claude code,tool,query,top,mcp,mcp,34.0
+claude code,tool,query,top,claude api,claude api,33.0
+claude code,tool,query,top,claude code api,claude code api,33.0
+claude code,tool,query,top,claude pricing,claude pricing,32.0
+claude code,tool,query,top,claude code pricing,claude code pricing,32.0
+claude code,tool,query,top,what is claude code,what is claude code,31.0
+claude code,tool,query,top,claude code app,claude code app,31.0
+claude code,tool,query,rising,what is claude code,what is claude code,428200.0
+claude code,tool,query,rising,claude code documentation,claude code documentation,425850.0
+claude code,tool,query,rising,claude code cli,claude code cli,382300.0
+claude code,tool,query,rising,claude code skills,claude code skills,362350.0
+claude code,tool,query,rising,claude skills,claude skills,361450.0
+claude code,tool,query,rising,skills claude,skills claude,360700.0
+claude code,tool,query,rising,claude code news,claude code news,348550.0
+claude code,tool,query,rising,claude code usage,claude code usage,203800.0
+claude code,tool,query,rising,claude code agents,claude code agents,203150.0
+claude code,tool,query,rising,claude code skill,claude code skill,195000.0
+claude code,tool,query,rising,claude design,claude design,180200.0
+claude code,tool,query,rising,claude subscription,claude subscription,152300.0
+claude code,tool,query,rising,codex vs claude code,codex vs claude code,143000.0
+claude code,tool,query,rising,claude code memory,claude code memory,133850.0
+claude code,tool,query,rising,claude code limits,claude code limits,132250.0
+claude code,tool,query,rising,claude code best practices,claude code best practices,131500.0
+claude code,tool,query,rising,claude code prices,claude code prices,128550.0
+claude code,tool,query,rising,opencode,opencode,125300.0
+claude code,tool,query,rising,antigravity,antigravity,125200.0
+claude code,tool,query,rising,claude code remote,claude code remote,124750.0
+claude code,tool,query,rising,claude code mobile,claude code mobile,119850.0
+claude code,tool,query,rising,claude code hooks,claude code hooks,115400.0
+claude code,tool,query,rising,docker,docker,88300.0
+claude code,tool,query,rising,claude cowork,claude cowork,86500.0
+claude code,tool,query,rising,claude code tutorial,claude code tutorial,85750.0
+claude code,tool,topic,top,Claude,claude,100.0
+claude code,tool,topic,top,Code,code,83.0
+claude code,tool,topic,top,Anthropic,anthropic,13.0
+claude code,tool,topic,top,Artificial intelligence,artificial intelligence,11.0
+claude code,tool,topic,top,GitHub,github,6.0
+claude code,tool,topic,top,install,install,5.0
+claude code,tool,topic,top,Review,review,5.0
+claude code,tool,topic,top,Skill,skill,5.0
+claude code,tool,topic,top,Application programming interface,application programming interface,5.0
+claude code,tool,topic,top,Model Context Protocol,model context protocol,5.0
+claude code,tool,topic,top,Visual Studio Code,visual studio code,5.0
+claude code,tool,topic,top,Pricing,pricing,5.0
+claude code,tool,topic,top,Documentation,documentation,4.0
+claude code,tool,topic,top,United Kingdom,united kingdom,4.0
+claude code,tool,topic,top,Command-line interface,command-line interface,4.0
+claude code,tool,topic,top,2024,2024,4.0
+claude code,tool,topic,top,Cost,cost,4.0
+claude code,tool,topic,top,Germany,germany,4.0
+claude code,tool,topic,top,Data,data,4.0
+claude code,tool,topic,top,Company,company,4.0
+claude code,tool,topic,top,March,march,3.0
+claude code,tool,topic,top,Computer file,computer file,3.0
+claude code,tool,topic,top,April,april,3.0
+claude code,tool,topic,top,Plug-in,plug-in,3.0
+claude code,tool,topic,rising,Documentation,documentation,409150.0
+claude code,tool,topic,rising,United Kingdom,united kingdom,407600.0
+claude code,tool,topic,rising,2024,2024,390050.0
+claude code,tool,topic,rising,Company,company,350750.0
+claude code,tool,topic,rising,March,march,313150.0
+claude code,tool,topic,rising,April,april,299500.0
+claude code,tool,topic,rising,Plug-in,plug-in,257050.0
+claude code,tool,topic,rising,Market,market,243650.0
+claude code,tool,topic,rising,2023,2023,237150.0
+claude code,tool,topic,rising,Business,business,208750.0
+claude code,tool,topic,rising,Security,security,207600.0
+claude code,tool,topic,rising,Tax,tax,206800.0
+claude code,tool,topic,rising,Management,management,201800.0
+claude code,tool,topic,rising,Review,review,1000.0
+claude code,tool,topic,rising,Skill,skill,600.0
+claude code,tool,topic,rising,Germany,germany,500.0
+claude code,tool,topic,rising,Data,data,300.0
+claude code,tool,topic,rising,Model Context Protocol,model context protocol,200.0
+claude code,tool,topic,rising,Cost,cost,150.0
+claude code,tool,topic,rising,Anthropic,anthropic,150.0
+claude code,tool,topic,rising,Pricing,pricing,120.0
+claude code,tool,topic,rising,Command-line interface,command-line interface,40.0
+prompt,concept,query,top,prompt ai,prompt ai,100.0
+prompt,concept,query,top,chatgpt prompt,chatgpt prompt,75.0
+prompt,concept,query,top,prompt engineering,prompt engineering,49.0
+prompt,concept,query,top,prompt ia,prompt ia,43.0
+prompt,concept,query,top,gemini prompt,gemini prompt,35.0
+prompt,concept,query,top,image prompt,image prompt,32.0
+prompt,concept,query,top,que es prompt,que es prompt,27.0
+prompt,concept,query,top,prompt para chatgpt,prompt para chatgpt,26.0
+prompt,concept,query,top,prompt gpt,prompt gpt,23.0
+prompt,concept,query,top,claude prompt,claude prompt,22.0
+prompt,concept,query,top,prompt de chatgpt,prompt de chatgpt,21.0
+prompt,concept,query,top,system prompt,system prompt,20.0
+prompt,concept,query,top,command prompt,command prompt,20.0
+prompt,concept,query,top,prompt injection,prompt injection,20.0
+prompt,concept,query,top,prompt para ia,prompt para ia,19.0
+prompt,concept,query,top,image to prompt,image to prompt,18.0
+prompt,concept,query,top,chat gpt prompt,chat gpt prompt,18.0
+prompt,concept,query,top,prompts,prompts,17.0
+prompt,concept,query,top,que es un prompt,que es un prompt,14.0
+prompt,concept,query,top,banana prompt,banana prompt,14.0
+prompt,concept,query,top,prompt generator,prompt generator,14.0
+prompt,concept,query,top,prompt para gemini,prompt para gemini,13.0
+prompt,concept,query,top,nano banana,nano banana,12.0
+prompt,concept,query,top,prompt cowboy,prompt cowboy,8.0
+prompt,concept,query,top,prompt para nano banana,prompt para nano banana,4.0
+prompt,concept,query,rising,banana prompt,banana prompt,208750.0
+prompt,concept,query,rising,nano banana,nano banana,177600.0
+prompt,concept,query,rising,prompt cowboy,prompt cowboy,123900.0
+prompt,concept,query,rising,prompt para nano banana,prompt para nano banana,52350.0
+prompt,concept,query,rising,openai news,openai news,46300.0
+prompt,concept,query,rising,nano banana pro,nano banana pro,40950.0
+prompt,concept,query,rising,ai news today,ai news today,38950.0
+prompt,concept,query,rising,prompt optimizer,prompt optimizer,33000.0
+prompt,concept,query,rising,nano banana google,nano banana google,22350.0
+prompt,concept,query,rising,nanobanana,nanobanana,22150.0
+prompt,concept,query,rising,cowboy prompt ai,cowboy prompt ai,20600.0
+prompt,concept,query,rising,sora 2,sora 2,16550.0
+prompt,concept,query,rising,comet,comet,16450.0
+prompt,concept,query,rising,prompt para fotos profesionales,prompt para fotos profesionales,15900.0
+prompt,concept,query,rising,prompt para mejorar la calidad de una imagen,prompt para mejorar la calidad de una imagen,14300.0
+prompt,concept,query,rising,mr prompt,mr prompt,9850.0
+prompt,concept,query,rising,lidl near me,lidl near me,8700.0
+prompt,concept,query,rising,min choi prompt,min choi prompt,8650.0
+prompt,concept,query,rising,prompt cannon,prompt cannon,7650.0
+prompt,concept,query,rising,humanizador de ia,humanizador de ia,7450.0
+prompt,concept,query,rising,generador de prompts,generador de prompts,7250.0
+prompt,concept,query,rising,openai prompt optimizer,openai prompt optimizer,7100.0
+prompt,concept,query,rising,prompt chatgpt caricatura,prompt chatgpt caricatura,6900.0
+prompt,concept,query,rising,technology news today,technology news today,5950.0
+prompt,concept,query,rising,seedance 2,seedance 2,5850.0
+prompt,concept,topic,top,command prompt,command prompt,100.0
+prompt,concept,topic,top,Artificial intelligence,artificial intelligence,66.0
+prompt,concept,topic,top,Image,image,36.0
+prompt,concept,topic,top,Prompt engineering,prompt engineering,22.0
+prompt,concept,topic,top,Gemini,gemini,18.0
+prompt,concept,topic,top,Data,data,14.0
+prompt,concept,topic,top,Review,review,14.0
+prompt,concept,topic,top,2024,2024,13.0
+prompt,concept,topic,top,Cost,cost,11.0
+prompt,concept,topic,top,Germany,germany,11.0
+prompt,concept,topic,top,Company,company,11.0
+prompt,concept,topic,top,United Kingdom,united kingdom,11.0
+prompt,concept,topic,top,Text,text,11.0
+prompt,concept,topic,top,System,system,11.0
+prompt,concept,topic,top,OpenAI,openai,11.0
+prompt,concept,topic,top,Claude,claude,10.0
+prompt,concept,topic,top,Application programming interface,application programming interface,10.0
+prompt,concept,topic,top,Product,product,9.0
+prompt,concept,topic,top,March,march,8.0
+prompt,concept,topic,top,India,india,7.0
+prompt,concept,topic,top,Tax,tax,7.0
+prompt,concept,topic,top,Rate,rate,7.0
+prompt,concept,topic,top,April,april,6.0
+prompt,concept,topic,top,Banana,banana,6.0
+prompt,concept,topic,top,February,february,6.0
+prompt,concept,topic,rising,April,april,196700.0
+prompt,concept,topic,rising,Reuters,reuters,102850.0
+prompt,concept,topic,rising,Australia,australia,89200.0
+prompt,concept,topic,rising,March,march,10150.0
+prompt,concept,topic,rising,Banana,banana,6300.0
+prompt,concept,topic,rising,Fee,fee,5250.0
+prompt,concept,topic,rising,Germany,germany,4600.0
+prompt,concept,topic,rising,India,india,4500.0
+prompt,concept,topic,rising,February,february,4150.0
+prompt,concept,topic,rising,Canada,canada,3700.0
+prompt,concept,topic,rising,Poland,poland,3500.0
+prompt,concept,topic,rising,Cowboy,cowboy,3500.0
+prompt,concept,topic,rising,Israel,israel,3100.0
+prompt,concept,topic,rising,Rate,rate,2900.0
+prompt,concept,topic,rising,Safety,safety,2900.0
+prompt,concept,topic,rising,Revenue,revenue,2600.0
+prompt,concept,topic,rising,Statistics,statistics,2600.0
+prompt,concept,topic,rising,Tax,tax,2450.0
+prompt,concept,topic,rising,Income,income,2350.0
+prompt,concept,topic,rising,Türkiye,türkiye,2300.0
+prompt,concept,topic,rising,Russia,russia,2300.0
+prompt,concept,topic,rising,2021,2021,2250.0
+prompt,concept,topic,rising,United Kingdom,united kingdom,2050.0
+prompt,concept,topic,rising,Review,review,2000.0
+youtube,platform,query,top,youtube video,youtube video,100.0
+youtube,platform,query,top,mp3 youtube,mp3 youtube,89.0
+youtube,platform,query,top,youtube music,youtube music,82.0
+youtube,platform,query,top,youtube videos,youtube videos,56.0
+youtube,platform,query,top,descargar de youtube,descargar de youtube,36.0
+youtube,platform,query,top,youtube musica,youtube musica,31.0
+youtube,platform,query,top,descargar video youtube,descargar video youtube,24.0
+youtube,platform,query,top,download youtube,download youtube,23.0
+youtube,platform,query,top,convertidor youtube,convertidor youtube,22.0
+youtube,platform,query,top,descargar mp3,descargar mp3,21.0
+youtube,platform,query,top,descargar youtube mp3,descargar youtube mp3,20.0
+youtube,platform,query,top,descargar videos youtube,descargar videos youtube,20.0
+youtube,platform,query,top,descargar videos,descargar videos,19.0
+youtube,platform,query,top,youtube music channel,youtube music channel,18.0
+youtube,platform,query,top,youtube en español,youtube en español,17.0
+youtube,platform,query,top,youtube mp4,youtube mp4,17.0
+youtube,platform,query,top,descargar musica youtube,descargar musica youtube,16.0
+youtube,platform,query,top,descargar musica,descargar musica,16.0
+youtube,platform,query,top,convertidor youtube mp3,convertidor youtube mp3,16.0
+youtube,platform,query,top,youtube app,youtube app,16.0
+youtube,platform,query,top,youtube shorts,youtube shorts,10.0
+youtube,platform,query,top,youtube studio,youtube studio,10.0
+youtube,platform,query,top,youtube audio library,youtube audio library,1.0
+youtube,platform,query,top,how to change youtube username,how to change youtube username,0.0
+youtube,platform,query,top,youtube 💖,youtube,0.0
+youtube,platform,query,rising,best coding youtube channels,best coding youtube channels,1250.0
+youtube,platform,query,rising,how to change youtube username,how to change youtube username,1250.0
+youtube,platform,query,rising,youtube 💖,youtube,600.0
+youtube,platform,query,rising,youtube app,youtube app,140.0
+youtube,platform,query,rising,youtube audio library,youtube audio library,90.0
+youtube,platform,query,rising,youtube shorts,youtube shorts,90.0
+youtube,platform,query,rising,youtube music channel,youtube music channel,70.0
+youtube,platform,query,rising,youtube studio,youtube studio,70.0
+youtube,platform,topic,top,YouTube,youtube,58.0
+youtube,platform,topic,top,MP3,mp3,3.0
+youtube,platform,topic,top,YouTube Music,youtube music,2.0
+youtube,platform,topic,top,"Video downloader, save video",video downloader save video,0.0
+youtube,platform,topic,rising,"Video downloader, save video",video downloader save video,1550.0
+youtube,platform,topic,rising,YouTube,youtube,600.0
+google,platform,query,top,maps google,maps google,100.0
+google,platform,query,top,google traductor,google traductor,51.0
+google,platform,query,top,translate google,translate google,25.0
+google,platform,query,top,drive google,drive google,12.0
+google,platform,query,top,google flights,google flights,12.0
+google,platform,query,top,google fotos,google fotos,8.0
+google,platform,query,top,traductor de google,traductor de google,8.0
+google,platform,query,top,docs google,docs google,7.0
+google,platform,query,top,google ai,google ai,7.0
+google,platform,query,top,google earth,google earth,7.0
+google,platform,query,top,gemini google,gemini google,6.0
+google,platform,query,top,google play,google play,6.0
+google,platform,query,top,google gmail,google gmail,6.0
+google,platform,query,top,google documentos,google documentos,6.0
+google,platform,query,top,google scholar,google scholar,5.0
+google,platform,query,top,google pixel,google pixel,5.0
+google,platform,query,top,google tiempo,google tiempo,5.0
+google,platform,query,top,ia google,ia google,5.0
+google,platform,query,top,documentos de google,documentos de google,5.0
+google,platform,query,top,google traduction,google traduction,4.0
+google,platform,query,top,google mapa,google mapa,4.0
+google,platform,query,top,google chat,google chat,4.0
+google,platform,query,top,google map,google map,4.0
+google,platform,query,top,google news,google news,4.0
+google,platform,query,top,google studio,google studio,3.0
+google,platform,query,rising,27.º aniversario del nacimiento de google,27 º aniversario del nacimiento de google,28450.0
+google,platform,query,rising,nano banana google,nano banana google,12950.0
+google,platform,query,rising,google pixel 10 pro xl,google pixel 10 pro xl,2600.0
+google,platform,query,rising,google pixel 10 pro,google pixel 10 pro,2000.0
+google,platform,query,rising,google pixel 10,google pixel 10,1800.0
+google,platform,query,rising,www google com search,www google com search,1150.0
+google,platform,query,rising,google flow,google flow,550.0
+google,platform,query,rising,ai studio google,ai studio google,400.0
+google,platform,query,rising,google news,google news,400.0
+google,platform,query,rising,gemini google,gemini google,350.0
+google,platform,query,rising,google notebooklm,google notebooklm,350.0
+google,platform,query,rising,google business profile,google business profile,350.0
+google,platform,query,rising,google pixel 9a,google pixel 9a,300.0
+google,platform,query,rising,google ai,google ai,300.0
+google,platform,query,rising,google studio,google studio,200.0
+google,platform,query,rising,google notebook,google notebook,200.0
+google,platform,query,rising,ia google,ia google,160.0
+google,platform,query,rising,ia de google,ia de google,120.0
+google,platform,query,rising,google business,google business,100.0
+google,platform,query,rising,google stock,google stock,90.0
+google,platform,query,rising,google doodle games,google doodle games,90.0
+google,platform,query,rising,google account,google account,90.0
+google,platform,query,rising,google one,google one,90.0
+google,platform,query,rising,google games,google games,80.0
+google,platform,query,rising,google form,google form,80.0
+google,platform,topic,top,Google,google,97.0
+google,platform,topic,top,Google Maps,google maps,22.0
+google,platform,topic,top,Google Translate,google translate,17.0
+google,platform,topic,top,Map,map,11.0
+google,platform,topic,top,Google Flights,google flights,3.0
+google,platform,topic,top,Google Search,google search,3.0
+google,platform,topic,top,Google Docs,google docs,3.0
+google,platform,topic,top,Google Drive,google drive,2.0
+google,platform,topic,top,Google Scholar,google scholar,2.0
+google,platform,topic,top,Google Photos,google photos,2.0
+google,platform,topic,top,Google Earth,google earth,2.0
+google,platform,topic,top,Google Play,google play,1.0
+google,platform,topic,top,User Account,user account,0.0
+google,platform,topic,top,Anniversary,anniversary,0.0
+google,platform,topic,top,Google AI Studio,google ai studio,0.0
+google,platform,topic,rising,Google AI Studio,google ai studio,33900.0
+google,platform,topic,rising,Anniversary,anniversary,2150.0
+google,platform,topic,rising,User Account,user account,250.0
+google,platform,topic,rising,Google Search,google search,110.0

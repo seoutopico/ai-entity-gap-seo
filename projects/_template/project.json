@@ -1,0 +1,26 @@
+{
+  "_template": true,
+  "_instrucciones": "La IA rellena estos campos LEYENDO el contenido del proyecto (los posts/newsletters). NO se entrevista al usuario. Copia esta plantilla a projects/<nombre>/project.json y completa el brief.",
+  "nombre_proyecto": "",
+  "fecha_creacion": "",
+  "fuente_contenido": "",
+  "brief": {
+    "tema": "<territorio editorial en 1-2 frases, inferido del contenido>",
+    "audiencia": "<a quién se dirige el contenido>",
+    "objetivo": "<seo | geo | ambos>",
+    "idioma": "es",
+    "geo": "ES",
+    "entidades_nucleo": ["<entidades/temas que SÍ son el terreno del proyecto>"],
+    "anti_territorio_inicial": ["<sentidos a EXCLUIR, inferidos LEYENDO el contenido: p.ej. 'claude = persona'>"],
+    "anti_territorio_detectado": [],
+    "tono_marca": "<voz y estilo del proyecto>"
+  },
+  "estado": {
+    "extraccion": false,
+    "limpieza_objetiva": false,
+    "limpieza_semantica": false,
+    "demanda_trends": false,
+    "gaps": false,
+    "backlog": false
+  }
+}

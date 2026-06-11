@@ -1,0 +1,76 @@
+source:
+  substack_feed_url: ""
+  posts_csv: "data/raw/posts.csv"
+  external_posts_csv: "data/raw/external_posts.csv"
+  external_entities_csv: "data/raw/external_entities.csv"
+  gsc_queries_csv: "data/raw/gsc_queries.csv"
+
+output:
+  posts_csv: "data/processed/posts.csv"
+  entities_csv: "outputs/entities.csv"
+  post_entity_edges_csv: "outputs/post_entity_edges.csv"
+  entity_edges_csv: "outputs/entity_edges.csv"
+  graph_graphml: "outputs/graph.graphml"
+  gaps_csv: "outputs/gaps.csv"
+  editorial_backlog_csv: "outputs/editorial_backlog.csv"
+  obsidian_dir: "outputs/obsidian"
+
+extraction:
+  engine: "gcp"                  # motor de extracción: Google Cloud Natural Language
+  api_version: "v1"              # v1 devuelve salience + metadata (mid, wikipedia_url)
+  api_key_env: "GOOGLE_NL_API_KEY"  # nombre de la variable en .env
+  language: "es"                 # "" para autodetección de idioma
+  include_title: true            # analiza title + text (el título pesa para SEO)
+  min_salience: 0.0              # descarta entidades por debajo de este salience (0-1)
+  require_kg_mid: false          # true = solo entidades enlazadas al Knowledge Graph
+  min_entity_chars: 2
+  request_timeout: 30
+  # --- Topes duros de coste por ejecución (0 = sin límite) ---
+  max_requests: 200              # corta tras N peticiones a la API
+  max_chars: 2000000             # corta antes de superar N caracteres (~2.000 unidades)
+  # --- Tope ABSOLUTO mensual acumulado entre ejecuciones (capa gratuita) ---
+  monthly_unit_cap: 5000         # NUNCA enviar más de 5.000 unidades/mes (0 = sin límite)
+  usage_file: ".usage/nl_usage.json"  # contador persistente del consumo mensual
+
+ontology:
+  patterns:
+    - type: tool
+      regex: "^(chatgpt|claude|gemini|perplexity|notebooklm|search console|google analytics)$"
+    - type: concept
+      regex: "^(ia generativa|ai overviews|geo|aeo|rag|embeddings|knowledge graph|entity seo)$"
+    - type: channel
+      regex: "^(substack|newsletter|blog|email)$"
+    - type: discipline
+      regex: "^(seo|content marketing|analítica|analytics)$"
+    - type: intent
+      regex: "^(cómo|guía|tutorial|checklist|plantilla|comparativa)"
+
+trends:
+  enabled: true
+  geo: "ES"                       # país (ES, "" = global)
+  hl: "es-ES"                     # idioma de la interfaz
+  timeframe: "today 12-m"         # ventana temporal
+  referer: "https://www.google.com/"   # evita el 429 de related_queries/topics
+  request_delay: 4.0              # segundos entre peticiones (Trends rate-limita fuerte)
+  max_seeds: 15                   # nº de entidades semilla a consultar por ejecución
+  seed_min_salience: 0.05         # salience acumulada mínima para ser semilla
+  seed_types:                     # tipos de entidad válidos como semilla (evita genéricos)
+    - tool
+    - concept
+    - platform
+    - organization
+    - consumer_good
+    - discipline
+  fetch_topics: true              # también related_topics (entidades del Knowledge Graph)
+  cache_csv: "data/raw/trends_related.csv"   # cache acumulativo; no reconsulta semillas ya hechas
+
+scoring:
+  shallow_post_threshold: 2
+  orphan_entity_threshold: 1
+  weights:
+    external: 0.45
+    search_console: 0.35
+    internal_gap: 0.20
+  opportunity_thresholds:
+    high: 0.70
+    medium: 0.40

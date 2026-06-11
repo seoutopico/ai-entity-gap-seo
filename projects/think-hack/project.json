@@ -1,0 +1,69 @@
+{
+  "nombre_proyecto": "think-hack",
+  "fecha_creacion": "2026-06-11",
+  "fuente_contenido": "Thinkandhack/30_Newsletter/publicadas/*.md (37 newsletters)",
+  "brief": {
+    "tema": "IA generativa aplicada a procesos reales de productividad, creación de contenido y SEO/GEO. El foco es el criterio y los sistemas (prompting, memoria/contexto, agentes, automatización), no los trucos ni el hype.",
+    "audiencia": "Profesionales y creadores de contenido, marketers y SEOs que quieren aplicar IA en su trabajo con criterio; perfil curioso, no necesariamente técnico. Hispanohablantes.",
+    "objetivo": "ambos",
+    "idioma": "es",
+    "geo": "ES",
+    "entidades_nucleo": [
+      "chatgpt",
+      "claude",
+      "claude code",
+      "gemini",
+      "notebooklm",
+      "nano banana pro",
+      "gpt-5",
+      "openai",
+      "n8n",
+      "wordpress",
+      "ia generativa",
+      "prompting",
+      "deep research",
+      "agentes",
+      "subagentes",
+      "memoria de contexto",
+      "contexto",
+      "growth editor",
+      "ai overviews",
+      "geo",
+      "seo",
+      "ctr",
+      "newsletter",
+      "substack"
+    ],
+    "anti_territorio_inicial": [
+      "claude = nombre de persona (aquí es la herramienta de IA)",
+      "euromillones = lotería (fue un experimento puntual, no es territorio)",
+      "netflix = catálogo de series (se usó solo como caso de CTR)"
+    ],
+    "anti_territorio_detectado": [
+      "memoria = RAM / hardware",
+      "memoria = canción (Rosalía)",
+      "memoria = videojuego (Arc Raiders)",
+      "nano banana = fruta / plátano",
+      "terapeuta = rol de psicología clínica (ChatGPT NO es tu terapeuta es anti-hype, no territorio)",
+      "golem = referencia mitológica/cultural (mencionado como metáfora, no entidad IA del territorio)",
+      "rodeado de idiotas = libro de Thomas Erikson (divulgación general, no IA)",
+      "mayordomo / mayordomo silencioso = metáfora retórica interna del newsletter (no entidad indexable)",
+      "sagas = entretenimiento / series (fuera del territorio)",
+      "teledeporte / partido = deporte (fuera del territorio)",
+      "playas / ciudad / museo = geografía/cultura (fuera del territorio)",
+      "archigram = colectivo arquitectónico histórico (referencia puntual, fuera del territorio)",
+      "tiburón rojo / cometa amarillo / diplomático verde / arquitecto azul = metáforas de perfil de usuario del newsletter (no entidades del territorio)",
+      "psicólogo = rol clínico ajeno al territorio (implícito en el anti-hype del brief)",
+      "notebook = cuaderno físico (cubierto por notebooklm cuando se refiere a la herramienta IA)"
+    ],
+    "tono_marca": "Primera persona y cercano (Aina; a veces colabora Eva). Directo, provocador y anti-hype ('Sé infiel a ChatGPT', 'ChatGPT NO es tu terapeuta'). Pedagógico, con guías prácticas y experimentos reales. Mensaje recurrente: usar IA con criterio propio, no delegar a ciegas."
+  },
+  "estado": {
+    "extraccion": true,
+    "limpieza_objetiva": true,
+    "limpieza_semantica": true,
+    "demanda_trends": true,
+    "gaps": true,
+    "backlog": true
+  }
+}

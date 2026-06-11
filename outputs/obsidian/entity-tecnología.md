@@ -1,0 +1,14 @@
+# tecnología
+
+Tipo: other
+
+## Posts
+
+- [En la cabeza de Juan](https://ainalluna.substack.com/p/implementar-ia-empresa-empezar)
+- [Datos sin procesos no sirven. Y la mayoría solo tiene datos.](https://ainalluna.substack.com/p/por-que-ia-resultados-mediocres)
+
+## Gaps a revisar
+
+- [ ] ¿Está explicada o solo mencionada?
+- [ ] ¿Tiene enlaces internos suficientes?
+- [ ] ¿Existe una pieza evergreen dedicada?
