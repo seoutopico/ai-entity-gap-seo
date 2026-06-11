@@ -185,16 +185,23 @@
   },
   "active": "41d41e1bbf7718de",
   "lastOpenFiles": [
+    "README.md.tmp.41356.1f0fa95e60b0",
+    "docs/arquitectura.md",
+    "docs/glosario.md",
+    "docs/glosario.md.tmp.41356.6ed1c056e5d2",
+    "docs/uso.md",
+    "docs/uso.md.tmp.41356.ab5700ffd581",
+    "docs/como-se-mide.md",
+    "docs/como-se-mide.md.tmp.41356.e248037009de",
+    "docs/el-metodo.md",
+    "docs/el-metodo.md.tmp.41356.39a69df785ce",
+    "docs/que-es.md",
+    "docs/que-es.md.tmp.41356.cc6ba6841905",
+    "docs/README.md",
+    "docs/README.md.tmp.41356.78aa56aed251",
+    "docs",
     "src/fetch_trends.py.tmp.41356.5048fde4daff",
     "src/clean_entities.py.tmp.41356.cd6df930b0f7",
-    "src/clean_entities.py.tmp.41356.bbb41886ab23",
-    "src/extract_entities.py.tmp.41356.c9be48f5eaba",
-    "src/extract_entities.py.tmp.41356.e75003a3b3c0",
-    "projects/_template/project.json.tmp.41356.f5588a0601f8",
-    "projects/think-hack/project.json.tmp.41356.a4f65860f076",
-    "config/config.yml.tmp.41356.4f00ab1c7db0",
-    "config/config.yml.tmp.41356.dca1c75587d8",
-    "src/utils.py.tmp.41356.a6903bd6d9cb",
-    "ARCHITECTURE.md.tmp.41356.504ad301184b"
+    "src/clean_entities.py.tmp.41356.bbb41886ab23"
   ]
 }

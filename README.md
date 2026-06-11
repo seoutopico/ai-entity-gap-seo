@@ -5,7 +5,10 @@ de entidades) y priorizar un backlog editorial, partiendo de tu propio archivo d
 contenido. Diseñado para correr bajo **Claude Code por conversación**: scripts
 deterministas + skills + agentes + un arnés que verifica.
 
-> El diseño completo está en **`ARCHITECTURE.md`**. Las mejoras pendientes, en **`BACKLOG.md`**.
+> 📖 **Documentación completa en [`docs/`](docs/README.md)** — para perfiles técnicos y no
+> técnicos: [qué es](docs/que-es.md) · [el método](docs/el-metodo.md) ·
+> [cómo se mide](docs/como-se-mide.md) · [uso](docs/uso.md) ·
+> [arquitectura](docs/arquitectura.md) · [glosario](docs/glosario.md).
 
 ## Filosofía
 
