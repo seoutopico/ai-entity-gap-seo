@@ -3,5 +3,5 @@ __pycache__/
 *.pyc
 .env
 .usage/
-config/config.yml
+.claude/settings.local.json
 outputs/*.html

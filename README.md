@@ -30,8 +30,7 @@ deterministas + skills + agentes + un arnés que verifica.
 python -m venv .venv
 source .venv/bin/activate           # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp config/config.example.yml config/config.yml
-cp .env.example .env                # añade tu GOOGLE_NL_API_KEY
+cp .env.example .env                # añade tu GOOGLE_NL_API_KEY (el único secreto)
 ```
 
 Necesitas una API key de **Google Cloud Natural Language API** (capa gratuita:

@@ -31,8 +31,9 @@ def clean(raw_df: pd.DataFrame, config: dict) -> pd.DataFrame:
     min_salience = float(cleaning.get("min_salience", 0.0))
     max_words = int(cleaning.get("max_entity_words", 0))
     blocklist = {canonicalize_entity(t) for t in cleaning.get("blocklist", [])}
-    brand_terms = {canonicalize_entity(t) for t in cleaning.get("brand_terms", [])}
     ontology = config.get("ontology", {})
+    # brand_terms NO viven aquí (fase objetiva): los marca el agente entity-curator
+    # (fase 3) leyendo project.json -> brief.brand_terms.
 
     df = raw_df.copy()
     n0 = len(df)
@@ -57,10 +58,10 @@ def clean(raw_df: pd.DataFrame, config: dict) -> pd.DataFrame:
         drop(word_count > max_words, "frases largas")
     drop(df["canonical_entity"].isin(blocklist), "blocklist genéricos")
 
-    # Reclasificar con la ontología (corrige tipados erróneos de Google) y marcar marca.
+    # Reclasificar con la ontología (corrige tipados erróneos de Google).
     if not df.empty:
         df["type"] = df.apply(
-            lambda r: _retype(r["canonical_entity"], r["type"], ontology, brand_terms),
+            lambda r: _retype(r["canonical_entity"], r["type"], ontology),
             axis=1,
         )
 
@@ -68,15 +69,10 @@ def clean(raw_df: pd.DataFrame, config: dict) -> pd.DataFrame:
     print(f"Limpieza: {n0} -> {len(df)} menciones (-{removed_total})")
     for label, n in counts.items():
         print(f"  - {label}: -{n}")
-    brand_n = int((df["type"] == "brand").sum()) if not df.empty else 0
-    if brand_n:
-        print(f"  · marcadas como brand (excluidas del gap analysis): {brand_n}")
     return df.reset_index(drop=True)
 
 
-def _retype(canonical: str, current: str, ontology: dict, brand_terms: set[str]) -> str:
-    if canonical in brand_terms:
-        return "brand"
+def _retype(canonical: str, current: str, ontology: dict) -> str:
     seo_type = classify_entity(canonical, ontology)
     if seo_type != "unknown":
         return seo_type

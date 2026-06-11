@@ -7,7 +7,8 @@ source:
 
 output:
   posts_csv: "data/processed/posts.csv"
-  entities_csv: "outputs/entities.csv"
+  entities_raw_csv: "outputs/entities_raw.csv"   # crudo de la API (cache, sin filtrar)
+  entities_csv: "outputs/entities.csv"           # limpio (post-filtrado)
   post_entity_edges_csv: "outputs/post_entity_edges.csv"
   entity_edges_csv: "outputs/entity_edges.csv"
   graph_graphml: "outputs/graph.graphml"
@@ -32,16 +33,57 @@ extraction:
   monthly_unit_cap: 5000         # NUNCA enviar más de 5.000 unidades/mes (0 = sin límite)
   usage_file: ".usage/nl_usage.json"  # contador persistente del consumo mensual
 
+cleaning:
+  # Tipos de Google que NO son entidades de contenido para SEO.
+  exclude_types:
+    - number
+    - date
+    - price
+    - phone_number
+    - address
+  min_salience: 0.001        # descarta menciones con salience por debajo de esto
+  max_entity_words: 6        # descarta "entidades" que son títulos/frases largas
+  # Pronombres y genéricos que Google tipa mal (person/other) y no son entidades.
+  blocklist:
+    - todo
+    - algo
+    - cosa
+    - cosas
+    - nada
+    - nadie
+    - alguien
+    - vez
+    - veces
+    - tema
+    - manera
+    - forma
+    - parte
+    - partes
+    - momento
+    - caso
+    - tipo
+    - mundo
+    - gente
+    - persona
+    - personas
+    - responsable
+    - becario
+  # NOTA: la marca/boilerplate (brand_terms) NO va aquí: es contexto de proyecto.
+  # Vive en projects/<id>/project.json -> brief.brand_terms y la usa el agente
+  # entity-curator (fase 3) para marcar type=brand.
+
 ontology:
   patterns:
     - type: tool
-      regex: "^(chatgpt|claude|gemini|perplexity|notebooklm|search console|google analytics)$"
+      regex: "^(chatgpt|claude|claude code|gemini|perplexity|notebooklm|notebook lm|codex|n8n|wordpress|midjourney|nano banana( pro)?|gpt(-?5(\\.\\d)?)?|google analytics|search console|obsidian)$"
     - type: concept
-      regex: "^(ia generativa|ai overviews|geo|aeo|rag|embeddings|knowledge graph|entity seo)$"
+      regex: "^(ia|inteligencia artificial|ia generativa|ai overviews|geo|aeo|rag|embeddings|knowledge graph|entity seo|deep research|prompting|prompt|contexto|agentes?|subagentes?|memoria|contexto largo)$"
+    - type: platform
+      regex: "^(youtube|linkedin|substack|netflix|google|instagram|tiktok|twitter|x)$"
     - type: channel
-      regex: "^(substack|newsletter|blog|email)$"
+      regex: "^(newsletter|blog|email)$"
     - type: discipline
-      regex: "^(seo|content marketing|analítica|analytics)$"
+      regex: "^(seo|sem|content marketing|analítica|analytics|copywriting)$"
     - type: intent
       regex: "^(cómo|guía|tutorial|checklist|plantilla|comparativa)"
 
