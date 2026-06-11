@@ -71,14 +71,14 @@ acumula entre ejecuciones. Nunca se envía nada que supere el límite.
 **Scripts** (`src/`)
 - `extract_entities.py` — ✅ Google NL v1 + topes de coste.
 - `clean_entities.py` — ✅ limpieza objetiva por reglas (fase 2).
-- `fetch_trends.py` — ✅ Trends vía trendspy (fase 4); selección de semillas a mover a la fase 3 (agente).
-- `build_graph.py`, `compare_gaps.py`, `run_pipeline.py` — ✅ existen (scoring heredado, a recalibrar).
-- `md_to_posts.py` — ✅ ingesta (pendiente: capturar métricas del frontmatter).
+- `fetch_trends.py` — ✅ Trends vía trendspy (fase 4) + filtro de relevancia y modo `--project`.
+- `md_to_posts.py` — ✅ ingesta de .md (pendiente: capturar métricas del frontmatter).
+- `build_graph.py`, `compare_gaps.py`, `ingest_substack.py` — ⚠️ standalone heredados, **a adaptar al flujo de proyecto o borrar**: grafo de co-ocurrencia / scoring a recalibrar / ingesta por feed RSS.
+- _(borrados en limpieza 2026-06: `run_pipeline.py`, `claude_audit_agent.py` — isla MVP desconectada)._
 
 **Skills** (`.claude/skills/`)
-- `run-entity-gap-pipeline` — ⚠️ actualizar al flujo nuevo + ruta `.venv`.
 - `entity-gap-audit` — ✅ válida (interpretación de outputs).
-- `nuevo-proyecto` — ➕ pendiente de crear (fase 0).
+- `nuevo-proyecto` — ✅ creada (fase 0).
 
 **Agentes** (`.claude/agents/`)
 - `entity-curator` — ✅ agente de limpieza semántica (fase 3): juzga relevancia anclado al brief, escribe `entities_curated.csv` y enriquece `anti_territorio_detectado` (loop). Sustituye al obsoleto `entity-extractor`.
@@ -98,9 +98,9 @@ acumula entre ejecuciones. Nunca se envía nada que supere el límite.
 
 ## Orden de construcción
 
-1. **Skill `nuevo-proyecto`** + `_template/project.json` (fase 0) — el cimiento; todo lo demás lee el brief.
-2. **Reescribir `entity-extractor`** como agente de limpieza semántica (fase 3) que consume el brief.
-3. Mover la **selección de semillas** de `fetch_trends.py` a la fase 3 (decisión del agente, no umbrales).
-4. Actualizar `run-entity-gap-pipeline` al flujo nuevo.
-5. Hook de validación de outputs.
-6. Recalibrar `opportunity_score` y conectar GSC real (ver `BACKLOG.md`).
+1. ✅ Skill `nuevo-proyecto` + `_template/project.json` (fase 0).
+2. ✅ Agente `entity-curator` de limpieza semántica (fase 3) que consume el brief.
+3. ✅ Filtro de relevancia en Trends usando territorio + anti_territorio (fase 4).
+4. ➕ Orquestador del flujo nuevo (por proyecto) — sustituye al `run_pipeline.py` borrado.
+5. ➕ Hook verify-gate (Default-FAIL automático) y loop `/mejora`.
+6. ➕ Recalibrar `opportunity_score` (`compare_gaps`) y conectar GSC real (ver `BACKLOG.md`).

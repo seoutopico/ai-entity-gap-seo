@@ -1,145 +1,77 @@
-# Think & Hack Entity Gap MVP
+# Entity Gap — SEO/GEO con IA
 
-MVP para analizar oportunidades SEO/GEO mediante entidades de contenido, grafos, scripts reproducibles y Claude Code.
+Sistema **repetible y escalable** para detectar oportunidades de contenido (gaps
+de entidades) y priorizar un backlog editorial, partiendo de tu propio archivo de
+contenido. Diseñado para correr bajo **Claude Code por conversación**: scripts
+deterministas + skills + agentes + un arnés que verifica.
 
-## Objetivo
+> El diseño completo está en **`ARCHITECTURE.md`**. Las mejoras pendientes, en **`BACKLOG.md`**.
 
-Convertir el archivo de una newsletter de Substack en un sistema auditable que detecta:
+## Filosofía
 
-- Entidades cubiertas por tu contenido.
-- Entidades ausentes o superficiales frente a competidores/SERPs.
-- Clusters temáticos débiles.
-- Posts huérfanos o mal conectados.
-- Oportunidades editoriales priorizadas por impacto SEO.
+> Dato **cuantitativo → script** (determinista). Dato **cualitativo → IA** como
+> clasificador, no como oráculo (skill/agente). Nada se da por hecho sin evidencia.
 
-## Flujo MVP
+## El flujo, por fases
 
-```text
-Substack RSS / CSV
-    -> posts.csv
-    -> entities.csv
-    -> graph.graphml + Obsidian notes
-    -> gaps.csv
-    -> editorial_backlog.csv
-    -> revisión con Claude Code skills/subagents
-```
+| Fase | Pieza | Qué hace |
+|------|-------|----------|
+| 0. Proyecto | skill `nuevo-proyecto` | crea `projects/<id>/` + brief autocompletado (`project.json`) |
+| 1. Extracción | `src/extract_entities.py` | Google NL `analyzeEntities` (salience + Knowledge Graph) |
+| 2. Limpieza objetiva | `src/clean_entities.py` | quita números, vacíos, frases-título (reglas) |
+| 3. Limpieza semántica | agente `entity-curator` | decide territorio/ruido con el brief; enriquece `anti_territorio` |
+| 4. Demanda | `src/fetch_trends.py` | Google Trends (related top + rising) filtrado al territorio |
+| 5-7. Gaps + backlog | agente `gap-strategist` | agrupa gaps en clusters y prioriza acciones editoriales |
+| Arnés | `bin/check.py` | check de salud + Default-FAIL (verifica cada fase) |
 
 ## Instalación
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate           # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp config/config.example.yml config/config.yml
-cp .env.example .env   # añade tu GOOGLE_NL_API_KEY
+cp .env.example .env                # añade tu GOOGLE_NL_API_KEY
 ```
 
-## Extracción de entidades
+Necesitas una API key de **Google Cloud Natural Language API** (capa gratuita:
+5.000 unidades/mes; el código nunca la supera, ver `extraction.monthly_unit_cap`).
 
-La extracción usa la **Google Cloud Natural Language API** (`analyzeEntities`), que
-devuelve entidades tipadas con `salience` (relevancia 0-1) y enlace al Knowledge
-Graph (`mid`, `wikipedia_url`). La clave se lee desde `.env`:
-
-```text
-GOOGLE_NL_API_KEY=tu_api_key
-```
-
-Habilita la "Cloud Natural Language API" en tu proyecto de Google Cloud y crea una
-API key en *APIs & Services > Credentials*. Parámetros en `config/config.yml` bajo
-`extraction` (idioma, `min_salience`, `require_kg_mid`, etc.).
-
-## Uso rápido con Substack
-
-Edita `config/config.yml` y añade tu feed, por ejemplo:
-
-```yaml
-source:
-  substack_feed_url: "https://TU-SUBDOMINIO.substack.com/feed"
-```
-
-Ejecuta:
+## Uso (por proyecto)
 
 ```bash
-python src/run_pipeline.py --config config/config.yml
+# 0. Crear proyecto desde una carpeta de .md (o un CSV url,title,published,text)
+python src/md_to_posts.py "ruta/a/newsletters/*.md" --out projects/<id>/data/raw/posts.csv
+# (la skill /nuevo-proyecto hace esto y rellena el brief leyendo el contenido)
+
+# 1-2. Extracción + limpieza objetiva
+python src/extract_entities.py --input projects/<id>/data/raw/posts.csv --out projects/<id>/outputs/entities.csv
+python src/clean_entities.py --raw projects/<id>/outputs/entities_raw.csv --out projects/<id>/outputs/entities.csv
+
+# 3. Limpieza semántica -> agente entity-curator (lee el brief)
+# 4. Demanda
+python src/fetch_trends.py --project <id>
+
+# Arnés: verificar salud y que el estado no miente
+python bin/check.py <id>
 ```
 
-## Uso con CSV exportado
-
-Crea `data/raw/posts.csv` con estas columnas mínimas:
-
-```csv
-url,title,published,text
-```
-
-Luego ejecuta:
-
-```bash
-python src/run_pipeline.py --config config/config.yml --skip-ingest
-```
-
-## Comparación externa
-
-Para detectar gaps de mercado, añade uno de estos inputs:
-
-1. `data/raw/external_posts.csv` con columnas `url,title,text`, obtenido de competidores o resultados SERP.
-2. `data/raw/external_entities.csv` con columna `canonical_entity` o `entity`.
-3. `data/raw/gsc_queries.csv` con columnas `query,clicks,impressions,ctr,position` exportadas de Search Console.
-
-El script no scrapea Google directamente. Para SERPs usa una API legal como SerpAPI, DataForSEO, Semrush, Ahrefs, Sistrix o una exportación manual.
-
-## Outputs
+## Estructura
 
 ```text
-outputs/entities.csv
-outputs/entity_edges.csv
-outputs/post_entity_edges.csv
-outputs/gaps.csv
-outputs/editorial_backlog.csv
-outputs/graph.graphml
-outputs/obsidian/*.md
+projects/<id>/          un proyecto = un análisis
+  project.json          brief (contexto del territorio) + estado de fases
+  data/raw/posts.csv    contenido ingerido
+  outputs/              entities, trends, gaps, editorial_backlog, topical_map
+src/                    scripts deterministas
+.claude/skills/         nuevo-proyecto, entity-gap-audit
+.claude/agents/         entity-curator, gap-strategist, seo-validator
+bin/check.py            el arnés (Default-FAIL)
 ```
 
-## Uso con Claude Code
-
-Este repo incluye:
+## Con Claude Code
 
 ```text
-.claude/skills/entity-gap-audit/SKILL.md
-.claude/skills/run-entity-gap-pipeline/SKILL.md
-.claude/agents/entity-extractor.md
-.claude/agents/gap-strategist.md
-.claude/agents/seo-validator.md
-.claude/settings.example.json
+/nuevo-proyecto <id> <ruta-al-contenido>
+/entity-gap-audit projects/<id>/outputs/gaps.csv projects/<id>/outputs/editorial_backlog.csv
 ```
-
-En Claude Code puedes invocar:
-
-```text
-/run-entity-gap-pipeline config/config.yml
-/entity-gap-audit outputs/gaps.csv outputs/editorial_backlog.csv
-```
-
-
-## Ejecución programática con Claude Agent SDK
-
-Opcionalmente puedes ejecutar una auditoría con el Agent SDK:
-
-```bash
-pip install -r requirements-agent.txt
-export ANTHROPIC_API_KEY=tu_api_key
-python src/claude_audit_agent.py --gaps outputs/gaps.csv --backlog outputs/editorial_backlog.csv
-```
-
-Para uso no interactivo desde Claude Code CLI:
-
-```bash
-claude -p "Usa /entity-gap-audit outputs/gaps.csv outputs/editorial_backlog.csv" --allowedTools "Read,Grep,Glob,Bash"
-```
-
-## Principio de diseño
-
-- Scripts: ingestan, transforman, cuentan, comparan y exportan.
-- Skills: encapsulan procedimientos repetibles.
-- Subagentes: separan análisis especializado.
-- Hooks: validan que Claude no rompa el pipeline.
-- Humanos: deciden qué publicar y qué no.
