@@ -56,7 +56,17 @@
       "psicólogo = rol clínico ajeno al territorio (implícito en el anti-hype del brief)",
       "notebook = cuaderno físico (cubierto por notebooklm cuando se refiere a la herramienta IA)"
     ],
-    "tono_marca": "Primera persona y cercano (Aina; a veces colabora Eva). Directo, provocador y anti-hype ('Sé infiel a ChatGPT', 'ChatGPT NO es tu terapeuta'). Pedagógico, con guías prácticas y experimentos reales. Mensaje recurrente: usar IA con criterio propio, no delegar a ciegas."
+    "tono_marca": "Primera persona y cercano (Aina; a veces colabora Eva). Directo, provocador y anti-hype ('Sé infiel a ChatGPT', 'ChatGPT NO es tu terapeuta'). Pedagógico, con guías prácticas y experimentos reales. Mensaje recurrente: usar IA con criterio propio, no delegar a ciegas.",
+    "brand_terms": ["think hack", "think&hack", "aina", "aina lluna", "eva", "suscríbete"],
+    "ontology": {
+      "patterns": [
+        {"type": "tool", "regex": "^(chatgpt|claude|claude code|gemini|perplexity|notebooklm|notebook lm|codex|n8n|wordpress|midjourney|nano banana( pro)?|gpt(-?5(\\.\\d)?)?|google analytics|search console|obsidian)$"},
+        {"type": "concept", "regex": "^(ia|inteligencia artificial|ia generativa|ai overviews|geo|aeo|rag|embeddings|knowledge graph|entity seo|deep research|prompting|prompt|contexto|agentes?|subagentes?|memoria|contexto largo)$"},
+        {"type": "platform", "regex": "^(youtube|linkedin|substack|netflix|google|instagram|tiktok|twitter|x)$"},
+        {"type": "channel", "regex": "^(newsletter|blog|email)$"},
+        {"type": "discipline", "regex": "^(seo|sem|content marketing|analítica|analytics|copywriting)$"}
+      ]
+    }
   },
   "estado": {
     "extraccion": true,

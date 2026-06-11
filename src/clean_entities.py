@@ -17,7 +17,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from utils import canonicalize_entity, classify_entity, ensure_parent, load_config
+from utils import canonicalize_entity, classify_entity, ensure_parent, load_config, load_project_config
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -90,14 +90,20 @@ def clean_file(raw_csv: str | Path, out_csv: str | Path, config: dict) -> pd.Dat
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="config/config.yml")
+    parser.add_argument("--project", default=None, help="id del proyecto (projects/<id>/)")
     parser.add_argument("--raw", default=None)
     parser.add_argument("--out", default=None)
     args = parser.parse_args()
 
-    config = load_config(args.config)
-    output_cfg = config.get("output", {})
-    raw_csv = args.raw or output_cfg.get("entities_raw_csv", "outputs/entities_raw.csv")
-    out_csv = args.out or output_cfg.get("entities_csv", "outputs/entities.csv")
+    config = load_project_config(args.config, args.project)
+    if args.project:
+        pdir = f"projects/{args.project}/outputs"
+        raw_csv = args.raw or f"{pdir}/entities_raw.csv"
+        out_csv = args.out or f"{pdir}/entities.csv"
+    else:
+        output_cfg = config.get("output", {})
+        raw_csv = args.raw or output_cfg.get("entities_raw_csv", "outputs/entities_raw.csv")
+        out_csv = args.out or output_cfg.get("entities_csv", "outputs/entities.csv")
     cleaned = clean_file(raw_csv, out_csv, config)
     print(f"Wrote {len(cleaned)} cleaned entity mentions to {out_csv}")
 

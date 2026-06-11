@@ -13,7 +13,15 @@
     "entidades_nucleo": ["<entidades/temas que SÍ son el terreno del proyecto>"],
     "anti_territorio_inicial": ["<sentidos a EXCLUIR, inferidos LEYENDO el contenido: p.ej. 'claude = persona'>"],
     "anti_territorio_detectado": [],
-    "tono_marca": "<voz y estilo del proyecto>"
+    "tono_marca": "<voz y estilo del proyecto>",
+    "brand_terms": ["<marca/boilerplate omnipresente que NO es gap: nombre, autor, CTA>"],
+    "ontology": {
+      "_comentario": "Tipado del dominio: la skill lo genera leyendo el contenido. Cada patrón mapea entidades a un tipo SEO.",
+      "patterns": [
+        {"type": "tool", "regex": "^(<herramientas del dominio, p.ej. chatgpt|claude>)$"},
+        {"type": "concept", "regex": "^(<conceptos del dominio>)$"}
+      ]
+    }
   },
   "estado": {
     "extraccion": false,

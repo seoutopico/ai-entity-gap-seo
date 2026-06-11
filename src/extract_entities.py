@@ -24,7 +24,14 @@ except ImportError:  # dotenv is optional; env vars can also be set by the shell
     def load_dotenv(*_args, **_kwargs):  # type: ignore
         return False
 
-from utils import canonicalize_entity, classify_entity, ensure_parent, load_config, require_columns
+from utils import (
+    canonicalize_entity,
+    classify_entity,
+    ensure_parent,
+    load_config,
+    load_project_config,
+    require_columns,
+)
 
 GCP_NL_ENDPOINT = "https://language.googleapis.com/{version}/documents:analyzeEntities"
 
@@ -259,13 +266,19 @@ def extract(input_csv: str | Path, output_csv: str | Path, config: dict) -> pd.D
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="config/config.yml")
+    parser.add_argument("--project", default=None, help="id del proyecto (projects/<id>/)")
     parser.add_argument("--input", default=None)
     parser.add_argument("--out", default=None)
     args = parser.parse_args()
 
-    config = load_config(args.config)
-    input_csv = args.input or config.get("output", {}).get("posts_csv", "data/processed/posts.csv")
-    output_csv = args.out or config.get("output", {}).get("entities_csv", "outputs/entities.csv")
+    config = load_project_config(args.config, args.project)
+    if args.project:
+        pdir = f"projects/{args.project}"
+        input_csv = args.input or f"{pdir}/data/raw/posts.csv"
+        output_csv = args.out or f"{pdir}/outputs/entities.csv"
+    else:
+        input_csv = args.input or config.get("output", {}).get("posts_csv", "data/processed/posts.csv")
+        output_csv = args.out or config.get("output", {}).get("entities_csv", "outputs/entities.csv")
     entities = extract(input_csv, output_csv, config)
     print(f"Wrote {len(entities)} entity mentions to {output_csv}")
 

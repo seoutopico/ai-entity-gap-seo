@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,39 @@ def load_config(path: str | Path) -> dict[str, Any]:
         raise FileNotFoundError(f"Config file not found: {config_path}")
     with config_path.open("r", encoding="utf-8") as f:
         return yaml.safe_load(f) or {}
+
+
+def load_project_brief(project_id: str) -> dict[str, Any]:
+    """Lee el brief de projects/<id>/project.json (vacío si no existe)."""
+    pj = Path("projects") / project_id / "project.json"
+    if not pj.exists():
+        return {}
+    try:
+        return json.loads(pj.read_text(encoding="utf-8")).get("brief", {})
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def load_project_config(config_path: str | Path, project_id: str | None = None) -> dict[str, Any]:
+    """Config EFECTIVO = config técnico (global) + datos de dominio del brief.
+
+    El config global solo tiene parámetros del sistema. Lo que depende del
+    contenido (ontología/tipado, idioma, geo) vive en el brief y lo manda él.
+    """
+    config = load_config(config_path)
+    if not project_id:
+        return config
+    brief = load_project_brief(project_id)
+    if brief.get("ontology"):
+        config["ontology"] = brief["ontology"]
+    idioma = brief.get("idioma", "")
+    geo = brief.get("geo", "")
+    if idioma:
+        config.setdefault("extraction", {})["language"] = idioma
+        config.setdefault("trends", {})["hl"] = f"{idioma}-{geo}" if geo else idioma
+    if geo:
+        config.setdefault("trends", {})["geo"] = geo
+    return config
 
 
 def ensure_parent(path: str | Path) -> Path:

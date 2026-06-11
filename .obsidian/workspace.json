@@ -185,15 +185,16 @@
   },
   "active": "41d41e1bbf7718de",
   "lastOpenFiles": [
-    "ARCHITECTURE.md.tmp.41356.504ad301184b",
-    "src/__pycache__/clean_entities.cpython-313.pyc",
-    "README.md.tmp.41356.bfb85e1d73ea",
-    "src/clean_entities.py.tmp.41356.d79cdc0764ca",
-    "src/clean_entities.py.tmp.41356.12c3249fcb00",
-    "src/clean_entities.py.tmp.41356.8b441992a901",
-    "config/config.yml.tmp.41356.7bc86873c40d",
-    "ARCHITECTURE.md.tmp.41356.634115b73eea",
-    "ARCHITECTURE.md.tmp.41356.8c59fe03bc38",
-    "README.md.tmp.41356.e4e4c369e877"
+    "src/fetch_trends.py.tmp.41356.5048fde4daff",
+    "src/clean_entities.py.tmp.41356.cd6df930b0f7",
+    "src/clean_entities.py.tmp.41356.bbb41886ab23",
+    "src/extract_entities.py.tmp.41356.c9be48f5eaba",
+    "src/extract_entities.py.tmp.41356.e75003a3b3c0",
+    "projects/_template/project.json.tmp.41356.f5588a0601f8",
+    "projects/think-hack/project.json.tmp.41356.a4f65860f076",
+    "config/config.yml.tmp.41356.4f00ab1c7db0",
+    "config/config.yml.tmp.41356.dca1c75587d8",
+    "src/utils.py.tmp.41356.a6903bd6d9cb",
+    "ARCHITECTURE.md.tmp.41356.504ad301184b"
   ]
 }

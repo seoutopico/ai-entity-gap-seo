@@ -28,7 +28,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from utils import canonicalize_entity, ensure_parent, load_config, minmax, read_optional_csv
+from utils import canonicalize_entity, ensure_parent, load_config, load_project_config, minmax, read_optional_csv
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -281,7 +281,7 @@ def main() -> None:
     parser.add_argument("--max-seeds", type=int, default=None)
     args = parser.parse_args()
 
-    config = load_config(args.config)
+    config = load_project_config(args.config, args.project)
     run(config, project=args.project, entities_csv=args.entities, max_seeds_override=args.max_seeds)
 
 

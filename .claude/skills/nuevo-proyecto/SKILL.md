@@ -44,10 +44,16 @@ o corrija hablando.
    - `tema`: territorio editorial en 1-2 frases.
    - `audiencia`, `objetivo` (seo|geo|ambos), `idioma`, `geo`.
    - `entidades_nucleo`: lo que SÍ es el terreno (marcas, herramientas, conceptos recurrentes).
-   - `anti_territorio`: **sentidos a EXCLUIR** para desambiguar después. Detecta
-     términos polisémicos del corpus y anota el sentido NO deseado (p.ej.
-     `"memoria = RAM"`, `"memoria = canción"`, `"nano banana = fruta"`).
+   - `anti_territorio_inicial`: **sentidos a EXCLUIR** que se infieren leyendo el
+     contenido (p.ej. `"claude = persona"`). Deja `anti_territorio_detectado: []`
+     (lo rellena el agente tras extracción/Trends — es el loop).
    - `tono_marca`: voz y estilo.
+   - `brand_terms`: marca/boilerplate omnipresente que NO es gap (nombre, autor, CTA).
+   - `ontology`: **el tipado del dominio**, generado leyendo el contenido. Agrupa las
+     entidades recurrentes por tipo SEO en `patterns` (regex), p.ej.
+     `{"type":"tool","regex":"^(chatgpt|claude|...)$"}`,
+     `{"type":"concept","regex":"^(...)$"}`. Esto NO es conocimiento tuyo a priori:
+     sale de qué herramientas/conceptos/plataformas aparecen de verdad en el corpus.
    - Rellena `nombre_proyecto`, `fecha_creacion` (fecha de hoy), `fuente_contenido`.
    - En `estado`, deja todo en `false` (aún no se ha procesado nada).
    - Quita las claves `_template`, `_instrucciones`.

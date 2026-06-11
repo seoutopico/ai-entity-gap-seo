@@ -20,7 +20,7 @@ extraction:
   engine: "gcp"                  # motor de extracción: Google Cloud Natural Language
   api_version: "v1"              # v1 devuelve salience + metadata (mid, wikipedia_url)
   api_key_env: "GOOGLE_NL_API_KEY"  # nombre de la variable en .env
-  language: "es"                 # "" para autodetección de idioma
+  language: ""                   # vacío = autodetección. El idioma del proyecto lo manda el brief.
   include_title: true            # analiza title + text (el título pesa para SEO)
   min_salience: 0.0              # descarta entidades por debajo de este salience (0-1)
   require_kg_mid: false          # true = solo entidades enlazadas al Knowledge Graph
@@ -72,25 +72,14 @@ cleaning:
   # Vive en projects/<id>/project.json -> brief.brand_terms y la usa el agente
   # entity-curator (fase 3) para marcar type=brand.
 
-ontology:
-  patterns:
-    - type: tool
-      regex: "^(chatgpt|claude|claude code|gemini|perplexity|notebooklm|notebook lm|codex|n8n|wordpress|midjourney|nano banana( pro)?|gpt(-?5(\\.\\d)?)?|google analytics|search console|obsidian)$"
-    - type: concept
-      regex: "^(ia|inteligencia artificial|ia generativa|ai overviews|geo|aeo|rag|embeddings|knowledge graph|entity seo|deep research|prompting|prompt|contexto|agentes?|subagentes?|memoria|contexto largo)$"
-    - type: platform
-      regex: "^(youtube|linkedin|substack|netflix|google|instagram|tiktok|twitter|x)$"
-    - type: channel
-      regex: "^(newsletter|blog|email)$"
-    - type: discipline
-      regex: "^(seo|sem|content marketing|analítica|analytics|copywriting)$"
-    - type: intent
-      regex: "^(cómo|guía|tutorial|checklist|plantilla|comparativa)"
+# ontology: NO va aquí (es el tipado del DOMINIO, depende del contenido).
+#   Vive en projects/<id>/project.json -> brief.ontology, generado por la skill
+#   nuevo-proyecto leyendo el contenido. load_project_config() lo inyecta.
 
 trends:
   enabled: true
-  geo: "ES"                       # país (ES, "" = global)
-  hl: "es-ES"                     # idioma de la interfaz
+  geo: ""                         # vacío = global. El geo del proyecto lo manda el brief.
+  hl: ""                          # idioma de interfaz; derivado del brief (idioma-geo).
   timeframe: "today 12-m"         # ventana temporal
   referer: "https://www.google.com/"   # evita el 429 de related_queries/topics
   request_delay: 4.0              # segundos entre peticiones (Trends rate-limita fuerte)
