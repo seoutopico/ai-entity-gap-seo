@@ -96,11 +96,34 @@ acumula entre ejecuciones. Nunca se envía nada que supere el límite.
 **Hooks**
 - ✅ py_compile tras editar `src/`; bloqueo `rm -rf`.
 
-## Orden de construcción
+## Backlog / pendientes
 
-1. ✅ Skill `nuevo-proyecto` + `_template/project.json` (fase 0).
-2. ✅ Agente `entity-curator` de limpieza semántica (fase 3) que consume el brief.
-3. ✅ Filtro de relevancia en Trends usando territorio + anti_territorio (fase 4).
-4. ➕ Orquestador del flujo nuevo (por proyecto) — sustituye al `run_pipeline.py` borrado.
-5. ➕ Hook verify-gate (Default-FAIL automático) y loop `/mejora`.
-6. ➕ Recalibrar `opportunity_score` (`compare_gaps`) y conectar GSC real (ver `BACKLOG.md`).
+**Hecho:** Google NL + topes de coste · limpieza objetiva (script) + semántica (agente
+con brief) · Trends + filtro de relevancia + normalización rising/top · arnés
+(`bin/check.py` con Default-FAIL) · proyecto + brief autocompletado · backlog editorial.
+
+**P0 — desbloquea gaps creíbles**
+- [ ] **Refactor config→brief**: mover `ontology` + `geo`/`idioma` al brief; que la skill
+  `nuevo-proyecto` los **derive del contenido**; que el código los lea del brief. Así
+  `config` queda solo técnico (genérico para cualquier proyecto).
+- [ ] **Conectar GSC real** (export de Search Console) — la señal de demanda propia más fiable.
+- [ ] **Recalibrar `opportunity_score`** (`compare_gaps`) con las fuentes nuevas (Trends + GSC).
+- [ ] **Orquestador del flujo por proyecto** (sustituye al `run_pipeline.py` borrado).
+
+**P1 — calidad de datos**
+- [ ] Limpieza residual: bajar `max_entity_words` a 4-5; genéricos mal tipados `person` a la
+  blocklist; decidir qué hacer con conceptos `other` (texto, datos, sistema).
+- [ ] Semillas demasiado amplias (`google`/`youtube`) cuelan ruido tangencial → afinar.
+- [ ] Aprovechar métricas del frontmatter (views/CTR/engagement) para priorizar.
+- [ ] Grafo de co-ocurrencia interactivo (adaptar `build_graph.py` al proyecto).
+
+**P2 — robustez**
+- [ ] Tests de `clean_entities` / `fetch_trends`.
+- [ ] Hook verify-gate (Default-FAIL automático) + loop `/mejora`.
+- [ ] Tipado por Knowledge Graph (`mid`) en vez de ontología regex; Trends por topic (`mid`);
+  forzar Wikipedia en español.
+
+**Futuro (descartado por ahora)**
+- [ ] Competidores / SERP reales (SerpAPI/DataForSEO).
+- [ ] Volumen de búsqueda absoluto (API de pago).
+- [ ] `interest_over_time` de Trends (429 frecuente; el `rising` ya da tendencia).
