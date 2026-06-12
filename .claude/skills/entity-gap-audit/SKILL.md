@@ -9,23 +9,21 @@ Analiza los outputs del pipeline de entity gaps y entrega un diagnóstico editor
 
 ## Inputs esperados
 
-- `outputs/entities.csv`
-- `outputs/gaps.csv`
-- `outputs/editorial_backlog.csv`
-- `outputs/entity_edges.csv`
-- `outputs/post_entity_edges.csv`
+- `projects/<id>/outputs/entities_curated.csv` (el territorio)
+- `projects/<id>/outputs/external_entities.csv` (demanda de Trends)
+- `projects/<id>/outputs/gaps.csv`
+- `projects/<id>/outputs/editorial_backlog.csv`
 
-Si el usuario pasa rutas concretas, usa esas rutas.
+Si el usuario pasa rutas concretas, usa esas rutas. Esquema de cada CSV en
+`projects/_template/outputs/`.
 
 ## Procedimiento
 
 1. Lee los CSV disponibles.
-2. Identifica las 10 entidades con mayor `opportunity_score`.
-3. Separa gaps en:
-   - `absent_entity`
-   - `shallow_coverage`
-   - `search_demand_no_clicks`
-   - `orphan_entity`
+2. Identifica las 10 entidades con mayor `score_norm` en `gaps.csv` (prioriza las `rising`).
+3. Separa gaps por `gap_type` (en el flujo actual: `trending` = demanda al alza,
+   `consolidado` = demanda establecida) y crúzalos con la cobertura interna del curado
+   (`posts`/`salience_sum`) para distinguir lo ausente de lo poco cubierto.
 4. Para cada oportunidad prioritaria, decide si conviene:
    - Crear artículo nuevo.
    - Actualizar un post existente.

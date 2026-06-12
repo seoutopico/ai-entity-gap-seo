@@ -9,7 +9,7 @@ Descubre demanda de búsqueda alrededor de tus entidades usando Google Trends
 
 Produce:
   data/raw/trends_related.csv          (cache acumulativo, crudo por término)
-  data/processed/external_entities.csv (demanda agregada para compare_gaps.py)
+  data/processed/external_entities.csv (demanda agregada que consume el agente gap-strategist)
 
 NO reconsulta semillas que ya están en el cache, para no abusar de Trends
 (que rate-limita con 429). Sube `max_seeds` poco a poco entre ejecuciones.
@@ -173,7 +173,7 @@ def normalize_scores(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_external_entities(cache: pd.DataFrame) -> pd.DataFrame:
-    """Agrega los términos de Trends en demanda externa para compare_gaps."""
+    """Agrega los términos de Trends en demanda externa (la consume el agente gap-strategist)."""
     if cache.empty:
         return pd.DataFrame(columns=["canonical_entity", "score", "source", "rising"])
     df = cache[cache["term_norm"].str.len() >= 2].copy()

@@ -29,6 +29,7 @@
     "limpieza_semantica": false,
     "demanda_trends": false,
     "gaps": false,
-    "backlog": false
+    "backlog": false,
+    "informe": false
   }
 }

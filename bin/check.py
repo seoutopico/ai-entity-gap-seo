@@ -27,6 +27,7 @@ except (AttributeError, ValueError):
 ROOT = Path(__file__).resolve().parent.parent
 
 # Fase del estado -> archivo de evidencia (dentro de projects/<id>/outputs/).
+# El ORDEN importa: una fase no puede estar hecha si una anterior no lo está.
 PHASE_EVIDENCE = {
     "extraccion": "entities_raw.csv",
     "limpieza_objetiva": "entities.csv",
@@ -34,7 +35,11 @@ PHASE_EVIDENCE = {
     "demanda_trends": "trends_related.csv",
     "gaps": "gaps.csv",
     "backlog": "editorial_backlog.csv",
+    "informe": "informe.md",
 }
+PHASE_ORDER = list(PHASE_EVIDENCE)
+
+TEMPLATE_DIR = ROOT / "projects/_template/outputs"
 
 _fail = False
 
@@ -62,6 +67,60 @@ def _csv_has_rows(path: Path, min_rows: int = 1) -> bool:
         return sum(1 for _ in zip(range(min_rows), reader)) >= min_rows
 
 
+def _csv_header(path: Path) -> set[str]:
+    with path.open(encoding="utf-8", newline="") as f:
+        return set(next(csv.reader(f), []))
+
+
+def _md_sections(path: Path) -> list[str]:
+    return [
+        line.strip()
+        for line in path.read_text(encoding="utf-8", errors="ignore").splitlines()
+        if line.startswith("## ")
+    ]
+
+
+def _md_missing_sections(path: Path) -> list[str]:
+    """Secciones `##` del molde que faltan en el informe (el molde es el contrato)."""
+    want = _md_sections(TEMPLATE_DIR / "informe.md")
+    got = set(_md_sections(path))
+    return [s for s in want if s not in got]
+
+
+def _evidence_ok(path: Path) -> bool:
+    if path.suffix == ".md":
+        return path.exists() and path.stat().st_size > 0 and not _md_missing_sections(path)
+    return _csv_has_rows(path)
+
+
+def check_contract(out_dir: Path) -> None:
+    """Cada CSV del contrato presente en outputs/ debe tener las columnas EXACTAS
+    del molde (projects/_template/outputs/). Un output con columnas inventadas o
+    renombradas rompe la fase siguiente: se considera FALLO, no detalle."""
+    if not out_dir.exists():
+        return
+    contract = {p.name: _csv_header(p) for p in TEMPLATE_DIR.glob("*.csv")}
+    for f in sorted(out_dir.iterdir()):
+        if f.name in contract:
+            got, want = _csv_header(f), contract[f.name]
+            if got == want:
+                continue
+            extra = sorted(got - want)
+            missing = sorted(want - got)
+            detail = "; ".join(
+                p for p in (extra and f"sobran {extra}", missing and f"faltan {missing}") if p
+            )
+            fail(f"contrato roto en {f.name}: {detail}")
+        elif f.name == "informe.md":
+            missing = _md_missing_sections(f)
+            if missing:
+                fail(f"contrato roto en informe.md: faltan secciones {missing}")
+        elif f.suffix == ".csv":
+            fail(f"{f.name} no es un output del contrato (scratch va a .tmp/, no a outputs/)")
+        else:
+            warn(f"{f.name} no pertenece al contrato de outputs/")
+
+
 def check_base() -> None:
     print("== Repo base ==")
     if (ROOT / "config/config.yml").exists():
@@ -69,7 +128,7 @@ def check_base() -> None:
     else:
         fail("falta config/config.yml (copia config.example.yml)")
 
-    for script in ("extract_entities.py", "clean_entities.py", "fetch_trends.py"):
+    for script in ("extract_entities.py", "clean_entities.py", "fetch_trends.py", "compare_gaps.py"):
         if (ROOT / "src" / script).exists():
             ok(f"src/{script} presente")
         else:
@@ -137,12 +196,21 @@ def check_project(project_id: str) -> None:
             continue
         any_true = True
         evidence = PHASE_EVIDENCE.get(phase)
-        if evidence and _csv_has_rows(out_dir / evidence):
+        if evidence and _evidence_ok(out_dir / evidence):
             ok(f"fase '{phase}' = hecha y verificada ({evidence})")
         else:
             fail(f"Default-FAIL: '{phase}' marcada hecha pero falta evidencia ({evidence})")
+        # Prerequisitos: el pipeline es secuencial; una fase hecha con una
+        # anterior pendiente = se saltaron pasos.
+        if phase in PHASE_ORDER:
+            skipped = [p for p in PHASE_ORDER[: PHASE_ORDER.index(phase)] if not estado.get(p)]
+            if skipped:
+                fail(f"fase '{phase}' hecha pero se saltó: {', '.join(skipped)}")
     if not any_true:
         print("       (ninguna fase ejecutada todavía; proyecto recién creado)")
+
+    # Contrato de columnas de todo output presente
+    check_contract(out_dir)
 
 
 def main() -> int:

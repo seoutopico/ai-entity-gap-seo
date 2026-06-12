@@ -33,8 +33,17 @@ Un `project_id` (carpeta `projects/<id>/`).
 4. **Detecta polisemia**: términos cuyo sentido en el corpus es territorio pero
    que en búsquedas colisionan con otro sentido. Añádelos a
    `anti_territorio_detectado` con el sentido a excluir (p.ej. `"memoria = RAM"`).
-5. **Escribe** `projects/<id>/outputs/entities_curated.csv` = solo las `KEEP`,
-   con las columnas de `entities.csv` + `decision` + `motivo`.
+5. **Escribe** `projects/<id>/outputs/entities_curated.csv` = solo las filas `KEEP`,
+   con el **esquema canónico** (ver `projects/_template/outputs/entities_curated.csv`). Es **agregado por
+   entidad** (una fila por `canonical_entity`), NO por mención. Columnas EXACTAS, en este orden:
+   ```
+   canonical_entity,type,posts,salience_sum,mid,decision,motivo
+   ```
+   - `posts` = nº de `url` distintas donde aparece. `salience_sum` = suma de `salience` de todas sus menciones.
+   - `mid` y `type` = los de la mención de mayor salience (vacío si no hay `mid`).
+   - **No uses** los nombres por-mención de `entities.csv` (`salience`, `mentions`, `score`, `url`…)
+     ni inventes variantes (`salience_total`, `n_posts`): la fase 4 (`fetch_trends.py`) busca
+     `salience_sum`/`posts`/`mid` por nombre y se rompe si no están.
 6. **Actualiza** `project.json`: añade lo nuevo a `anti_territorio_detectado` y
    marca `estado.limpieza_semantica = true` — **solo si escribiste el CSV**.
 
@@ -42,8 +51,12 @@ Un `project_id` (carpeta `projects/<id>/`).
 
 - **No inventes** entidades que no estén en `entities.csv`.
 - Ante duda de territorio: `KEEP` pero anótalo. Si coincide con `anti_territorio`: `DROP`.
-- **No toques el pipeline ni otros archivos**: solo `entities_curated.csv` y el
-  `project.json` del proyecto.
+- **No toques el pipeline ni otros archivos**: tus ÚNICAS salidas son `entities_curated.csv`
+  y el `project.json` del proyecto. **NUNCA edites `entities_raw.csv` ni `entities.csv`**
+  (son el cache de la API y el limpiado por reglas: si su tipado está mal, se arregla en
+  el script, no aquí).
+- **Nada de scratch en `outputs/`**: si necesitas archivos de trabajo (scripts, volcados),
+  escríbelos en `.tmp/` y bórralos al terminar. `outputs/` solo contiene salidas del contrato.
 - **No marques `estado=true` sin la evidencia** escrita (el check lo verifica).
 - **Cita el brief** en tus motivos; nunca "porque sí".
 
