@@ -98,3 +98,14 @@ Una fase marcada como hecha solo se da por buena si su archivo de evidencia
 existe, tiene contenido, **sus columnas (o secciones) coinciden exactamente con
 el molde** y ninguna fase anterior quedó sin hacer. Si algo miente, sale con
 código 2: el informe nunca sustituye al disco.
+
+## Autora
+
+Hecho por **Aina Lluna**.
+
+Si te interesa la IA aplicada, la gestión de proyectos con LLMs y cómo construir
+sistemas personales sobre Claude Code, suscríbete a mi newsletter en
+[ainalluna.substack.com](https://ainalluna.substack.com).
+
+Si este repo te resulta útil, una estrella en GitHub o un comentario por el canal
+que prefieras se agradece.
