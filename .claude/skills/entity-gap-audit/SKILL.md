@@ -1,11 +1,14 @@
 ---
-description: Audita outputs de análisis de entidades de contenido, gaps SEO/GEO y backlog editorial. Úsalo cuando el usuario quiera interpretar outputs/gaps.csv, outputs/editorial_backlog.csv, entities.csv o el grafo de contenido.
+description: Audita outputs de análisis de entidades de contenido, gaps SEO/GEO y backlog editorial, y valida críticamente las recomendaciones (medibles, realistas, sin suposiciones sin datos). Úsalo cuando el usuario quiera interpretar o auditar outputs/gaps.csv, outputs/editorial_backlog.csv, informe.md o entities.csv.
 allowed-tools: Read Grep Glob Bash
 ---
 
 ## Objetivo
 
-Analiza los outputs del pipeline de entity gaps y entrega un diagnóstico editorial accionable para ganar visibilidad en buscadores.
+Analiza los outputs del pipeline de entity gaps y entrega un diagnóstico editorial
+accionable. Y, si ya existen backlog y/o informe, **valídalos críticamente**: el
+que produce no se valida a sí mismo, así que aquí se desconfía de lo que los
+agentes produjeron y se comprueba contra los CSV.
 
 ## Inputs esperados
 
@@ -13,6 +16,7 @@ Analiza los outputs del pipeline de entity gaps y entrega un diagnóstico editor
 - `projects/<id>/outputs/external_entities.csv` (demanda de Trends)
 - `projects/<id>/outputs/gaps.csv`
 - `projects/<id>/outputs/editorial_backlog.csv`
+- `projects/<id>/outputs/informe.md` (si existe, valídalo también)
 
 Si el usuario pasa rutas concretas, usa esas rutas. Esquema de cada CSV en
 `projects/_template/outputs/`.
@@ -32,6 +36,15 @@ Si el usuario pasa rutas concretas, usa esas rutas. Esquema de cada CSV en
    - Cambiar title/intro/estructura.
 5. No recomiendes publicar sobre entidades que no encajen con el territorio editorial del proyecto.
 6. Distingue entre demanda SEO, moda de IA y autoridad real de la newsletter.
+7. **Validación crítica** (si hay backlog y/o informe): verifica todo número del
+   informe contra su CSV y emite veredicto por pieza del backlog
+   (`aprobada / con reparos / rechazada` + motivo + dato que lo sustenta). Marca:
+   - Suposiciones no verificadas (afirmaciones sin dato en los CSV).
+   - Piezas ancladas a gaps sin demanda externa ni señal interna.
+   - Propuestas demasiado genéricas (sin entidad, URL, intención y acción).
+   - Acciones no medibles (ver indicadores en Criterios).
+   - Confusión entre tráfico de newsletter, tráfico orgánico y visibilidad en
+     buscadores generativos.
 
 ## Output
 
@@ -44,6 +57,7 @@ Entrega:
 4. Backlog editorial priorizado
 5. Enlaces internos recomendados
 6. Experimentos para medir en Search Console
+7. Validación crítica (si hay backlog/informe): veredicto por pieza
 ```
 
 ## Criterios
@@ -56,3 +70,14 @@ Prioriza temas que cumplan:
 - Capacidad de producir una pieza evergreen con utilidad práctica.
 
 Evita recomendaciones genéricas como “mejorar SEO” sin indicar entidad, URL, intención y acción.
+
+Toda recomendación (tuya o del backlog que validas) debe poder medirse con alguno
+de estos indicadores:
+
+- Impresiones en Search Console.
+- Clicks orgánicos.
+- CTR.
+- Posición media.
+- Nuevas queries por URL.
+- Enlaces internos añadidos.
+- Número de entidades cubiertas por cluster.

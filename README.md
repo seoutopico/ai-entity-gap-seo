@@ -81,7 +81,7 @@ projects/<id>/          un proyecto = un análisis
   outputs/              entities*, trends*, gaps, editorial_backlog, informe.md
 projects/_template/     contrato de columnas (molde, no se copia)
 src/                    scripts deterministas
-.claude/agents/         entity-curator, gap-strategist, report-writer, seo-validator
+.claude/agents/         entity-curator, gap-strategist, report-writer
 .claude/skills/         nuevo-proyecto, entity-gap-audit
 config/config.yml       parámetros técnicos (el dominio vive en el brief de cada proyecto)
 bin/check.py            el arnés (Default-FAIL)

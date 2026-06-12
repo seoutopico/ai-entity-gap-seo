@@ -40,7 +40,7 @@ El pipeline es **por proyecto** (`projects/<id>/`). Lánzalo en orden de fases.
 | 5. Gaps | `src/compare_gaps.py` | `python src/compare_gaps.py --project <id>` | `gaps.csv` |
 | 6-7. Backlog | agente `gap-strategist` | lánzalo con la tool **Agent** (`subagent_type: gap-strategist`), pásale el `<id>` | `editorial_backlog.csv` |
 | 8. Informe | agente `report-writer` | lánzalo con la tool **Agent** (`subagent_type: report-writer`), pásale el `<id>` | `informe.md` |
-| Auditar | skill `entity-gap-audit` | invoca la skill sobre los outputs (diálogo, no escribe archivos) | diagnóstico editorial |
+| Auditar | skill `entity-gap-audit` | invoca la skill sobre los outputs (diálogo, no escribe archivos) | diagnóstico editorial + validación crítica del backlog/informe |
 
 Notas de ejecución:
 
@@ -126,7 +126,7 @@ projects/<id>/        un proyecto = un análisis
   outputs/            entities*, trends*, gaps, editorial_backlog, informe.md
 projects/_template/   contrato de columnas (molde, no se copia)
 src/                  scripts deterministas (extract, clean, fetch_trends, compare_gaps, md_to_posts, utils)
-.claude/agents/       entity-curator, gap-strategist, report-writer, seo-validator
+.claude/agents/       entity-curator, gap-strategist, report-writer
 .claude/skills/       nuevo-proyecto, entity-gap-audit
 config/config.yml     parámetros TÉCNICOS (no dominio)
 bin/check.py          el arnés (Default-FAIL)
