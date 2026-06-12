@@ -8,6 +8,10 @@ contenido (newsletters, blog…).
 Diseñado para correr bajo **Claude Code por conversación**: scripts deterministas
 + agentes + skills + un arnés que verifica cada fase contra el disco.
 
+> 📖 **Documentación en [`docs/`](docs/README.md)** — para perfiles técnicos y no
+> técnicos: [conceptos](docs/conceptos.md) · [el pipeline](docs/el-pipeline.md) ·
+> [cómo se mide](docs/como-se-mide.md) · [arquitectura](docs/arquitectura.md).
+
 ## Filosofía
 
 > Dato **cuantitativo → script** (determinista, reproducible).
