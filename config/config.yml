@@ -1,20 +1,11 @@
 source:
-  substack_feed_url: ""
   posts_csv: "data/raw/posts.csv"
-  external_posts_csv: "data/raw/external_posts.csv"
   external_entities_csv: "data/raw/external_entities.csv"
-  gsc_queries_csv: "data/raw/gsc_queries.csv"
 
 output:
   posts_csv: "data/processed/posts.csv"
   entities_raw_csv: "outputs/entities_raw.csv"   # crudo de la API (cache, sin filtrar)
   entities_csv: "outputs/entities.csv"           # limpio (post-filtrado)
-  post_entity_edges_csv: "outputs/post_entity_edges.csv"
-  entity_edges_csv: "outputs/entity_edges.csv"
-  graph_graphml: "outputs/graph.graphml"
-  gaps_csv: "outputs/gaps.csv"
-  editorial_backlog_csv: "outputs/editorial_backlog.csv"
-  obsidian_dir: "outputs/obsidian"
 
 extraction:
   engine: "gcp"                  # motor de extracción: Google Cloud Natural Language
