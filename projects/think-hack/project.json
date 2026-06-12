@@ -54,17 +54,49 @@
       "archigram = colectivo arquitectónico histórico (referencia puntual, fuera del territorio)",
       "tiburón rojo / cometa amarillo / diplomático verde / arquitecto azul = metáforas de perfil de usuario del newsletter (no entidades del territorio)",
       "psicólogo = rol clínico ajeno al territorio (implícito en el anti-hype del brief)",
-      "notebook = cuaderno físico (cubierto por notebooklm cuando se refiere a la herramienta IA)"
+      "notebook = cuaderno físico (cubierto por notebooklm cuando se refiere a la herramienta IA)",
+      "memoria de contexto = solo aparece como canonical entity sola (memoria), que es polisémica; la mencion nucleo del brief es conceptual, no como entidad aislada indexable",
+      "gpt-5 prompting guide = recurso externo de terceros (no territorio propio del brief); salience alta porque fue citado en un post, no porque sea una entidad del corpus de Aina",
+      "seo summit = evento puntual externo al brief; mencionado como contexto de ponencia, no como tema recurrente",
+      "ugc = User Generated Content; aparece una sola vez en contexto SEO pero no es tema recurrente del brief",
+      "openai cookbook de los tres = artefacto de titulo truncado; la entidad real es openai cookbook (recurso externo)",
+      "juan implementar ia = nombre propio de persona (caso real mencionado en el brief); no es entidad indexable generica",
+      "nano banana pro gemini 3 pro = artefacto de mencion combinada de dos entidades_nucleo distintas en un mismo contexto; no es una entidad independiente",
+      "gpt-5 2 = artefacto numerado (referencia a version o mencion especifica); la entidad real es gpt-5",
+      "sistema de escritura con ia = metafora/sistema interno del newsletter; relevante como concepto pero baja probabilidad de ser busqueda directa",
+      "analista seo para ai overviews = rol compuesto; artefacto de mencion de un perfil especifico, no entidad indexable standalone"
     ],
     "tono_marca": "Primera persona y cercano (Aina; a veces colabora Eva). Directo, provocador y anti-hype ('Sé infiel a ChatGPT', 'ChatGPT NO es tu terapeuta'). Pedagógico, con guías prácticas y experimentos reales. Mensaje recurrente: usar IA con criterio propio, no delegar a ciegas.",
-    "brand_terms": ["think hack", "think&hack", "aina", "aina lluna", "eva", "suscríbete"],
+    "brand_terms": [
+      "think hack",
+      "think&hack",
+      "aina",
+      "aina lluna",
+      "eva",
+      "suscríbete"
+    ],
     "ontology": {
       "patterns": [
-        {"type": "tool", "regex": "^(chatgpt|claude|claude code|gemini|perplexity|notebooklm|notebook lm|codex|n8n|wordpress|midjourney|nano banana( pro)?|gpt(-?5(\\.\\d)?)?|google analytics|search console|obsidian)$"},
-        {"type": "concept", "regex": "^(ia|inteligencia artificial|ia generativa|ai overviews|geo|aeo|rag|embeddings|knowledge graph|entity seo|deep research|prompting|prompt|contexto|agentes?|subagentes?|memoria|contexto largo)$"},
-        {"type": "platform", "regex": "^(youtube|linkedin|substack|netflix|google|instagram|tiktok|twitter|x)$"},
-        {"type": "channel", "regex": "^(newsletter|blog|email)$"},
-        {"type": "discipline", "regex": "^(seo|sem|content marketing|analítica|analytics|copywriting)$"}
+        {
+          "type": "tool",
+          "regex": "^(chatgpt|claude|claude code|gemini|perplexity|notebooklm|notebook lm|codex|n8n|wordpress|midjourney|nano banana( pro)?|gpt(-?5(\\.\\d)?)?|google analytics|search console|obsidian)$"
+        },
+        {
+          "type": "concept",
+          "regex": "^(ia|inteligencia artificial|ia generativa|ai overviews|geo|aeo|rag|embeddings|knowledge graph|entity seo|deep research|prompting|prompt|contexto|agentes?|subagentes?|memoria|contexto largo)$"
+        },
+        {
+          "type": "platform",
+          "regex": "^(youtube|linkedin|substack|netflix|google|instagram|tiktok|twitter|x)$"
+        },
+        {
+          "type": "channel",
+          "regex": "^(newsletter|blog|email)$"
+        },
+        {
+          "type": "discipline",
+          "regex": "^(seo|sem|content marketing|analítica|analytics|copywriting)$"
+        }
       ]
     }
   },
@@ -74,6 +106,7 @@
     "limpieza_semantica": true,
     "demanda_trends": true,
     "gaps": true,
-    "backlog": true
+    "backlog": true,
+    "informe": true
   }
 }

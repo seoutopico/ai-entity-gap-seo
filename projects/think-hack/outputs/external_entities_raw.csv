@@ -1,30 +1,52 @@
 canonical_entity,score,rising,seeds,source
-2026,3051850.0,1,1,google_trends
-news,1318450.0,1,1,google_trends
+generative pre-trained transformer,6528300.0,1,1,google_trends
+2026,5386100.0,1,2,google_trends
+gpt-5,5359150.0,1,1,google_trends
+openai,2976950.0,1,4,google_trends
+claude code,2523000.0,1,1,google_trends
+artificial intelligence,2327100.0,1,9,google_trends
+code,1801550.0,1,2,google_trends
+review,1532350.0,1,5,google_trends
+news,1318450.0,1,2,google_trends
+2024,1298800.0,1,4,google_trends
+knowledge,1173950.0,1,1,google_trends
+mobile app,1109500.0,1,2,google_trends
+data,1104950.0,1,5,google_trends
+company,1092700.0,1,4,google_trends
+united kingdom,1090450.0,1,4,google_trends
+computer file,1048550.0,1,3,google_trends
+cost,1020050.0,1,5,google_trends
+application programming interface,942650.0,1,4,google_trends
+germany,925800.0,1,4,google_trends
+pricing,813900.0,1,2,google_trends
+march,801250.0,1,3,google_trends
+tax,740500.0,1,3,google_trends
+github,738000.0,1,3,google_trends
 2023,725750.0,1,2,google_trends
+image,712450.0,1,4,google_trends
+law,709950.0,1,1,google_trends
+market,684400.0,1,3,google_trends
+document,682700.0,1,1,google_trends
 france,656150.0,1,1,google_trends
+good,653000.0,1,1,google_trends
 product,640650.0,1,2,google_trends
 india,625000.0,1,2,google_trends
-market,562400.0,1,2,google_trends
 child,526500.0,1,1,google_trends
 2022,516800.0,1,1,google_trends
 december,516800.0,1,1,google_trends
 school,506100.0,1,1,google_trends
-history,477600.0,1,1,google_trends
+history,477600.0,1,2,google_trends
 january,450800.0,1,1,google_trends
 türkiye,448200.0,1,2,google_trends
 location,445650.0,1,1,google_trends
 japan,445450.0,1,1,google_trends
 city,436200.0,1,1,google_trends
-website,430750.0,1,1,google_trends
+website,430750.0,1,2,google_trends
 2021,428650.0,1,2,google_trends
 what is claude code,428200.0,1,1,google_trends
 claude code documentation,425850.0,1,1,google_trends
-github,414900.0,1,2,google_trends
-documentation,409150.0,1,2,google_trends
-united kingdom,407600.0,1,3,google_trends
+documentation,409150.0,1,3,google_trends
 apple,402850.0,1,1,google_trends
-2024,390050.0,1,3,google_trends
 april,385600.0,1,3,google_trends
 article,382300.0,1,1,google_trends
 claude code cli,382300.0,1,1,google_trends
@@ -32,21 +54,19 @@ february,364600.0,1,2,google_trends
 claude code skills,362350.0,1,1,google_trends
 claude skills,361450.0,1,1,google_trends
 skills claude,360700.0,1,1,google_trends
-company,350750.0,1,3,google_trends
 claude code news,348550.0,1,1,google_trends
-march,313150.0,1,2,google_trends
-plug-in,257050.0,1,1,google_trends
+plug-in,257050.0,1,2,google_trends
 banana prompt,208750.0,1,1,google_trends
 business,208750.0,1,1,google_trends
-security,207600.0,1,1,google_trends
-tax,206800.0,1,2,google_trends
+security,207600.0,1,2,google_trends
 claude code usage,203800.0,1,1,google_trends
 claude code agents,203150.0,1,1,google_trends
 management,201800.0,1,1,google_trends
 claude code skill,195000.0,1,1,google_trends
 claude design,180200.0,1,1,google_trends
-nano banana,177600.0,1,2,google_trends
+nano banana,177600.0,1,3,google_trends
 claude subscription,152300.0,1,1,google_trends
+ai agent,148550.0,1,1,google_trends
 codex vs claude code,143000.0,1,1,google_trends
 claude code memory,133850.0,1,1,google_trends
 claude code limits,132250.0,1,1,google_trends
@@ -60,107 +80,192 @@ prompt cowboy,123900.0,1,1,google_trends
 claude code mobile,119850.0,1,1,google_trends
 claude code hooks,115400.0,1,1,google_trends
 ai news today,114300.0,1,2,google_trends
-reuters,102850.0,1,1,google_trends
+ice,111200.0,1,1,google_trends
+united states immigration and customs enforcement,110500.0,1,1,google_trends
+reuters,102850.0,1,2,google_trends
+prompt engineering,96500.0,1,2,google_trends
+claude,93400.0,1,6,google_trends
 australia,89200.0,1,1,google_trends
 docker,88300.0,1,1,google_trends
 ai mode,86850.0,1,1,google_trends
-claude cowork,86500.0,1,1,google_trends
+claude cowork,86500.0,1,2,google_trends
 deep learning tutorials,86450.0,1,1,google_trends
 claude code tutorial,85750.0,1,1,google_trends
-nano banana gemini,79350.0,1,1,google_trends
+nano banana gemini,79350.0,1,2,google_trends
+que es un prompt,78750.0,1,2,google_trends
+engineer,78000.0,1,1,google_trends
+reference,74850.0,1,1,google_trends
+virtual assistant,74800.0,1,1,google_trends
+need,70950.0,1,1,google_trends
+trailer,67850.0,1,1,google_trends
+workflow,59100.0,1,1,google_trends
 ejerciciosdememoria,57500.0,1,1,google_trends
+cuál es una diferencia clave entre ia predictiva e ia generativa,56600.0,1,1,google_trends
+social network,55150.0,1,1,google_trends
 prompt para nano banana,52350.0,1,1,google_trends
 humanize ai,49700.0,1,1,google_trends
-lidl near me,46850.0,1,2,google_trends
+gemini,48400.0,1,4,google_trends
+lidl near me,46850.0,1,3,google_trends
 openai news,46300.0,1,1,google_trends
-nano banana pro,40950.0,1,1,google_trends
-walmart near me,38000.0,1,1,google_trends
-google ai studio,33900.0,1,2,google_trends
+nano banana pro,40950.0,1,2,google_trends
+walmart near me,38000.0,1,2,google_trends
+google ai studio,33900.0,1,3,google_trends
 notebook lm,33900.0,1,1,google_trends
 prompt optimizer,33000.0,1,1,google_trends
 nano banana ia,32000.0,1,1,google_trends
 27 º aniversario del nacimiento de google,28450.0,1,1,google_trends
-nano banana google,22350.0,1,2,google_trends
-nanobanana,22150.0,1,2,google_trends
+nano banana google,22350.0,1,3,google_trends
+nanobanana,22150.0,1,3,google_trends
 best deep conditioners,21300.0,1,1,google_trends
 qué distingue al modelo deep research de otros,20800.0,1,1,google_trends
 cowboy prompt ai,20600.0,1,1,google_trends
 how to deep clean kitchen,19950.0,1,1,google_trends
+wordpress 6 9,18000.0,1,1,google_trends
 memoria rosalia letra,17150.0,1,1,google_trends
 sora 2,16550.0,1,1,google_trends
 comet,16450.0,1,1,google_trends
 prompt para fotos profesionales,15900.0,1,1,google_trends
 best deep dish pizza in chicago,15250.0,1,1,google_trends
 prompt para mejorar la calidad de una imagen,14300.0,1,1,google_trends
+wordpress 7 0,14050.0,1,1,google_trends
+lovable,13200.0,1,1,google_trends
 tu rostro siempre en mi memoria,12650.0,1,1,google_trends
 memória,11800.0,1,1,google_trends
 mr prompt,9850.0,1,1,google_trends
 min choi prompt,8650.0,1,1,google_trends
+gemini banana,8500.0,1,1,google_trends
+animo alberto,7950.0,1,1,google_trends
 prompt cannon,7650.0,1,1,google_trends
 humanizador de ia,7450.0,1,2,google_trends
 generador de prompts,7250.0,1,1,google_trends
+crear tu sitio web con wordpress en 10 pasos,7200.0,1,1,google_trends
 openai prompt optimizer,7100.0,1,1,google_trends
 prompt chatgpt caricatura,6900.0,1,1,google_trends
 google modo ia,6650.0,1,1,google_trends
-banana,6300.0,1,1,google_trends
+agentes de la cia en chihuahua,6450.0,1,1,google_trends
+contexto histórico del neoclasicismo,6350.0,1,1,google_trends
+banana,6300.0,1,2,google_trends
+openai news today,6100.0,1,1,google_trends
 technology news today,5950.0,1,1,google_trends
 seedance 2,5850.0,1,1,google_trends
 fee,5250.0,1,1,google_trends
 banana ia,5050.0,1,1,google_trends
+revenue,4950.0,1,2,google_trends
+deshabilitar los comentarios de wordpress,4900.0,1,1,google_trends
 proxus ia,4650.0,1,1,google_trends
-germany,4600.0,1,3,google_trends
+moltbook,4400.0,1,1,google_trends
+gemini pro estudiantes,4300.0,1,1,google_trends
+rate,4100.0,1,2,google_trends
 modo ia,4050.0,1,1,google_trends
 rosalia memoria,4050.0,1,1,google_trends
+pamela gemini,3900.0,1,1,google_trends
+gemini storybook,3850.0,1,1,google_trends
+astronomer empresa,3800.0,1,1,google_trends
 astra ia,3750.0,1,1,google_trends
 canada,3700.0,1,1,google_trends
+instalación de google analytics en wordpress,3600.0,1,1,google_trends
 cowboy,3500.0,1,1,google_trends
 poland,3500.0,1,1,google_trends
+agentes del ice,3450.0,1,1,google_trends
+banana ai,3300.0,1,1,google_trends
 israel,3100.0,1,1,google_trends
 astra ai,2950.0,1,1,google_trends
-rate,2900.0,1,1,google_trends
+average,2900.0,1,1,google_trends
 safety,2900.0,1,1,google_trends
+htaccess file essential functions wordpress latest-templates com,2750.0,1,1,google_trends
 alex ia legal,2700.0,1,1,google_trends
+diferencias entre hosting y dominio,2700.0,1,1,google_trends
 google pixel 10 pro xl,2600.0,1,1,google_trends
-revenue,2600.0,1,1,google_trends
 statistics,2600.0,1,1,google_trends
+songless,2400.0,1,1,google_trends
 income,2350.0,1,1,google_trends
+legal obligation,2350.0,1,2,google_trends
+agentes ice,2300.0,1,1,google_trends
 russia,2300.0,1,1,google_trends
+gemini estudiantes gratis,2200.0,1,1,google_trends
+wordpress-org,2200.0,1,1,google_trends
 anniversary,2150.0,1,1,google_trends
+gemini cli,2150.0,1,1,google_trends
+research,2100.0,1,2,google_trends
+latest-templates com minimal wordpress numerous advantages,2050.0,1,1,google_trends
 google pixel 10 pro,2000.0,1,1,google_trends
-review,2000.0,1,3,google_trends
+vimeo login,2000.0,1,1,google_trends
+wordpress mcp,2000.0,1,1,google_trends
+descubre los mejores editores de videos online,1900.0,1,1,google_trends
+revista contexto tucumán,1900.0,1,1,google_trends
+wordpress news,1900.0,1,1,google_trends
 google pixel 10,1800.0,1,1,google_trends
+sigue estos consejos para ser el mejor diseñador gráfico,1750.0,1,1,google_trends
 video downloader save video,1550.0,1,1,google_trends
+cómo utilizar camtasia de la mejor manera guía rápida,1500.0,1,1,google_trends
+gemini pro estudiantes gratis,1450.0,1,1,google_trends
+gemini estudiantes,1300.0,1,1,google_trends
 best coding youtube channels,1250.0,1,1,google_trends
+command-line interface,1250.0,1,2,google_trends
 how to change youtube username,1250.0,1,1,google_trends
 consolidación de la memoria,1200.0,1,1,google_trends
+cómo aprender a editar con photoshop los mejores consejos,1200.0,1,1,google_trends
+godaddy managed wordpress,1200.0,1,1,google_trends
+google gemini estudiantes,1150.0,1,1,google_trends
 www google com search,1150.0,1,1,google_trends
+españa recruitment,1100.0,1,1,google_trends
 codex chatgpt,1050.0,1,1,google_trends
+kebab express mi empresa,950.0,1,1,google_trends
+gemini pro gratis para estudiantes,850.0,1,1,google_trends
 preservar la memoria arc raiders,850.0,1,1,google_trends
+restaurantes para cenas de empresa,850.0,1,1,google_trends
 sede electrónica del ministerio de política territorial y memoria democrática,850.0,1,1,google_trends
+españa recruitment empresa,800.0,1,1,google_trends
+gemini omni,800.0,1,1,google_trends
+microsoft copilot,800.0,1,1,google_trends
+software agent,800.0,1,1,google_trends
+gemini 3 pro,700.0,1,1,google_trends
+la empresa de sillas,700.0,1,1,google_trends
+student,700.0,1,1,google_trends
+economic activity,650.0,1,1,google_trends
+how to install wordpress,650.0,1,1,google_trends
+automation,600.0,1,1,google_trends
 mode ia,600.0,1,1,google_trends
 skill,600.0,1,1,google_trends
 youtube,600.0,1,1,google_trends
 en algun lugar de la memoria,550.0,1,1,google_trends
 google flow,550.0,1,1,google_trends
+audio signal,500.0,1,1,google_trends
+what is wordpress,500.0,1,1,google_trends
+agentes de la uco,450.0,1,1,google_trends
+gemini 3 0,450.0,1,1,google_trends
+gemini para estudiantes,450.0,1,1,google_trends
+gemini pro para estudiantes,450.0,1,1,google_trends
+que son los agentes de ia,450.0,1,1,google_trends
+wordpress pricing,450.0,1,1,google_trends
 ai studio google,400.0,1,1,google_trends
+gei,400.0,1,1,google_trends
+gemini ai photo,400.0,1,1,google_trends
 google news,400.0,1,1,google_trends
 memoria ram ddr5 16gb,400.0,1,1,google_trends
 memoria ram ddr5 32gb,400.0,1,1,google_trends
-claude,350.0,1,3,google_trends
-gemini google,350.0,1,1,google_trends
-google business profile,350.0,1,1,google_trends
+the 355,400.0,1,1,google_trends
+agentes de ia,350.0,1,1,google_trends
+command prompt,350.0,1,3,google_trends
+gemini google,350.0,1,2,google_trends
+google business profile,350.0,1,2,google_trends
 google notebooklm,350.0,1,1,google_trends
 memoria de un asesino serie,350.0,1,1,google_trends
+ofertas de trabajo de empresa confidencial,350.0,1,1,google_trends
+paid,350.0,1,1,google_trends
 claude ia,300.0,1,1,google_trends
-command prompt,300.0,1,2,google_trends
-data,300.0,1,3,google_trends
-google ai,300.0,1,1,google_trends
+gemini enterprise,300.0,1,1,google_trends
+gemini pro,300.0,1,1,google_trends
+google ai,300.0,1,2,google_trends
 google pixel 9a,300.0,1,1,google_trends
 kimi ia,300.0,1,1,google_trends
+la empresa de las sillas,300.0,1,1,google_trends
 maite ia,300.0,1,1,google_trends
-perplexity,300.0,1,2,google_trends
+perplexity,300.0,1,4,google_trends
+agentes ia,250.0,1,1,google_trends
 alex ia,250.0,1,1,google_trends
 chatgpt business,250.0,1,1,google_trends
+conversation,250.0,1,1,google_trends
 free,250.0,1,1,google_trends
 notebooklm,250.0,1,1,google_trends
 user account,250.0,1,1,google_trends
@@ -171,35 +276,47 @@ google studio,200.0,1,1,google_trends
 memoria ram ddr5,200.0,1,1,google_trends
 model context protocol,200.0,1,1,google_trends
 oreate ia,190.0,1,1,google_trends
+property,190.0,1,1,google_trends
+ia agentica,180.0,1,1,google_trends
 ia studio google,180.0,1,1,google_trends
+information,180.0,1,2,google_trends
 notebook ia,180.0,1,1,google_trends
+wordpress install,180.0,1,1,google_trends
+cox empresa,170.0,1,1,google_trends
+question,170.0,1,2,google_trends
+risk brilliant math science wiki,170.0,1,2,google_trends
 ia google,160.0,1,1,google_trends
-anthropic,150.0,1,1,google_trends
-cost,150.0,1,3,google_trends
+anthropic,150.0,1,2,google_trends
 ddr5 sdram,150.0,1,1,google_trends
+empresa gas manufacturado,150.0,1,1,google_trends
 ministerio de política territorial y memoria democrática,140.0,1,1,google_trends
 youtube app,140.0,1,1,google_trends
-gemini ia,130.0,1,1,google_trends
-gemini,120.0,1,3,google_trends
+gemini ia,130.0,1,2,google_trends
+prompt,130.0,1,1,google_trends
 geminis ia gratis,120.0,1,1,google_trends
 ia de google,120.0,1,2,google_trends
-pricing,120.0,1,1,google_trends
+intelligent agent,120.0,1,1,google_trends
 chatgpt plus,110.0,1,1,google_trends
 ejercicios de memoria con soluciones,110.0,1,1,google_trends
 gafas ia,110.0,1,1,google_trends
 google search,110.0,1,1,google_trends
 grok,110.0,1,1,google_trends
+wordpress ia,110.0,1,1,google_trends
+claude ai,100.0,1,2,google_trends
 deep research que es,100.0,1,1,google_trends
 google business,100.0,1,1,google_trends
 grok ai,100.0,1,1,google_trends
 memoria ram ddr4 16gb,100.0,1,1,google_trends
 sora chatgpt,100.0,1,1,google_trends
+system,100.0,1,4,google_trends
+wordpress plugin,100.0,1,1,google_trends
 google account,90.0,1,1,google_trends
 google doodle games,90.0,1,1,google_trends
 google one,90.0,1,1,google_trends
 google stock,90.0,1,1,google_trends
 memoria ram ddr4 32gb,90.0,1,1,google_trends
 precio memoria ram,90.0,1,1,google_trends
+que significa contexto,90.0,1,1,google_trends
 youtube audio library,90.0,1,1,google_trends
 youtube shorts,90.0,1,1,google_trends
 32 gb,80.0,1,1,google_trends
@@ -207,152 +324,260 @@ corsair,80.0,1,1,google_trends
 google form,80.0,1,1,google_trends
 google games,80.0,1,1,google_trends
 chatgpt openai,70.0,1,1,google_trends
+contexto me,70.0,1,1,google_trends
+emt palma empresa municipal de transportes de palma de mallorca,70.0,1,1,google_trends
+machine,70.0,1,1,google_trends
 memoria de españa,70.0,1,1,google_trends
+qué significa contexto,70.0,1,1,google_trends
+text,70.0,1,4,google_trends
+web hosting service,70.0,1,1,google_trends
 youtube music channel,70.0,1,1,google_trends
 youtube studio,70.0,1,1,google_trends
+acciona empresa,60.0,1,1,google_trends
 chatgpt app,60.0,1,1,google_trends
 coolmod,60.0,1,1,google_trends
+empresa confidencial,60.0,1,1,google_trends
+machine learning,60.0,1,1,google_trends
+master s degree,60.0,1,1,google_trends
+amadeus empresa,50.0,1,1,google_trends
+chatgpt agentes,50.0,1,1,google_trends
+ia predictiva,50.0,1,1,google_trends
 memoria ram ddr4,50.0,1,1,google_trends
-command-line interface,40.0,1,1,google_trends
-openai,40.0,1,3,google_trends
-artificial intelligence,100.0,0,4,google_trends
+que es el contexto,50.0,1,1,google_trends
+que es un contexto,50.0,1,1,google_trends
+qué es el contexto,50.0,1,1,google_trends
+significado de contexto,50.0,1,1,google_trends
+contexto significado,40.0,1,1,google_trends
+tool,40.0,1,1,google_trends
 chatgpt,100.0,0,1,google_trends
 chatgpt gratis,100.0,0,1,google_trends
 claude vs code,100.0,0,1,google_trends
+el contexto,100.0,0,1,google_trends
+enterprise,100.0,0,1,google_trends
+gemini ai,100.0,0,1,google_trends
 gemini deep research,100.0,0,1,google_trends
+generative ai,100.0,0,1,google_trends
 la ia,100.0,0,1,google_trends
 la memoria,100.0,0,1,google_trends
 maps google,100.0,0,1,google_trends
+mi empresa,100.0,0,1,google_trends
 prompt ai,100.0,0,1,google_trends
-research,100.0,0,1,google_trends
+que es ia generativa,100.0,0,1,google_trends
+wordpress,100.0,0,1,google_trends
 youtube video,100.0,0,1,google_trends
 claude code vs code,98.0,0,1,google_trends
 deep research ai,98.0,0,1,google_trends
 google,97.0,0,1,google_trends
+ai,93.0,0,2,google_trends
 claude code anthropic,93.0,0,1,google_trends
 vs code,93.0,0,1,google_trends
 chatgpt deep research,92.0,0,1,google_trends
+project,92.0,0,1,google_trends
 mp3 youtube,89.0,0,1,google_trends
 deep research chatgpt,88.0,0,1,google_trends
 anthropic claude,86.0,0,1,google_trends
-code,83.0,0,1,google_trends
 youtube music,82.0,0,1,google_trends
 chatgpt prompt,75.0,0,1,google_trends
 deep research google,71.0,0,1,google_trends
-claude ai,70.0,0,1,google_trends
+wordpress web,71.0,0,1,google_trends
 claude ai code,70.0,0,1,google_trends
+que es una empresa,62.0,0,1,google_trends
 ia gratis,59.0,0,1,google_trends
-2025,56.0,0,1,google_trends
+2025,56.0,0,2,google_trends
+biology,56.0,0,1,google_trends
+traffic,56.0,0,1,google_trends
 youtube videos,56.0,0,1,google_trends
+chemistry,52.0,0,1,google_trends
+vehicle,52.0,0,1,google_trends
 chatgpt gpt,51.0,0,1,google_trends
 google traductor,51.0,0,1,google_trends
 ia chatgpt,51.0,0,2,google_trends
-price,50.0,0,1,google_trends
-prompt engineering,49.0,0,1,google_trends
+price,50.0,0,2,google_trends
+biological agent,49.0,0,1,google_trends
+agentes medioambientales,48.0,0,1,google_trends
 chatgpt ai,47.0,0,1,google_trends
 chatgpt español,47.0,0,1,google_trends
+inteligencia artificial generativa,47.0,0,1,google_trends
 google ia,46.0,0,1,google_trends
 ia detector,46.0,0,1,google_trends
+police,46.0,0,1,google_trends
+agentes forestales,45.0,0,1,google_trends
 claude code price,45.0,0,1,google_trends
 claude price,45.0,0,1,google_trends
+agentes de hacienda,43.0,0,1,google_trends
 prompt ia,43.0,0,1,google_trends
+real estate,43.0,0,1,google_trends
+certificado empresa,42.0,0,1,google_trends
 computer data storage,42.0,0,1,google_trends
+ia generativa imagenes,42.0,0,1,google_trends
+que es contexto,42.0,0,1,google_trends
+agente forestal,41.0,0,1,google_trends
 chatgpt españa,41.0,0,1,google_trends
 github claude code,41.0,0,1,google_trends
+natural environment,39.0,0,1,google_trends
+tripartite classification of authority,38.0,0,1,google_trends
 detector de ia,37.0,0,1,google_trends
-ai,36.0,0,1,google_trends
+accident,36.0,0,1,google_trends
 claude code pro,36.0,0,1,google_trends
 claude code review,36.0,0,1,google_trends
 claude pro,36.0,0,1,google_trends
 descargar de youtube,36.0,0,1,google_trends
-image,36.0,0,2,google_trends
 perplexity deep research,36.0,0,1,google_trends
+signal,36.0,0,1,google_trends
+agentes de la autoridad,35.0,0,1,google_trends
 claude code docs,35.0,0,1,google_trends
+driver,35.0,0,1,google_trends
 gemini prompt,35.0,0,1,google_trends
 claude code mcp,34.0,0,1,google_trends
 claude mcp,34.0,0,1,google_trends
 mcp,34.0,0,1,google_trends
+agentes comerciales,33.0,0,1,google_trends
 claude api,33.0,0,1,google_trends
 claude code api,33.0,0,1,google_trends
+agentes inmobiliarios,32.0,0,1,google_trends
 chatgpt online,32.0,0,1,google_trends
 claude code pricing,32.0,0,1,google_trends
 claude pricing,32.0,0,1,google_trends
 image prompt,32.0,0,1,google_trends
+certificado de empresa,31.0,0,1,google_trends
 claude code app,31.0,0,1,google_trends
 ia imagenes,31.0,0,1,google_trends
 youtube musica,31.0,0,1,google_trends
+ia generativa de imagenes,30.0,0,1,google_trends
+wordpress theme,30.0,0,1,google_trends
 memoria ram,29.0,0,1,google_trends
+agentes digitalizadores,28.0,0,1,google_trends
 ram,28.0,0,1,google_trends
+driving,27.0,0,1,google_trends
+elementor,27.0,0,1,google_trends
 que es prompt,27.0,0,1,google_trends
+real estate broker,27.0,0,1,google_trends
+contexto historico,26.0,0,1,google_trends
+empresa de limpieza,26.0,0,1,google_trends
 prompt para chatgpt,26.0,0,1,google_trends
+wordpress elementor,26.0,0,1,google_trends
+agentes biologicos,25.0,0,1,google_trends
+agentes externos,25.0,0,1,google_trends
+agentes quimicos,25.0,0,1,google_trends
 ia chat,25.0,0,1,google_trends
 ia video,25.0,0,1,google_trends
 translate google,25.0,0,1,google_trends
+agentes libres,24.0,0,1,google_trends
 chat ia,24.0,0,1,google_trends
 descargar video youtube,24.0,0,1,google_trends
+gemini chat,24.0,0,1,google_trends
 deep learning,23.0,0,1,google_trends
 download youtube,23.0,0,1,google_trends
+hosting,23.0,0,1,google_trends
+hosting wordpress,23.0,0,1,google_trends
 ia fotos,23.0,0,1,google_trends
 ia videos,23.0,0,1,google_trends
 prompt gpt,23.0,0,1,google_trends
 claude prompt,22.0,0,1,google_trends
 convertidor youtube,22.0,0,1,google_trends
 google maps,22.0,0,1,google_trends
+kit digital,22.0,0,1,google_trends
 mejor ia,22.0,0,1,google_trends
+agentes de movilidad,21.0,0,1,google_trends
 descargar mp3,21.0,0,1,google_trends
-pdf,21.0,0,1,google_trends
+pdf,21.0,0,2,google_trends
 prompt de chatgpt,21.0,0,1,google_trends
+wordpress online,21.0,0,1,google_trends
+wordpress que es,21.0,0,1,google_trends
+agentes de shield,20.0,0,1,google_trends
+agentes shield,20.0,0,1,google_trends
 chatgpt login,20.0,0,1,google_trends
 descargar videos youtube,20.0,0,1,google_trends
 descargar youtube mp3,20.0,0,1,google_trends
 imagen ia,20.0,0,1,google_trends
-learning,20.0,0,1,google_trends
+learning,20.0,0,2,google_trends
 prompt injection,20.0,0,1,google_trends
+señales de los agentes,20.0,0,1,google_trends
 system prompt,20.0,0,1,google_trends
 chatgpt free,19.0,0,1,google_trends
 descargar videos,19.0,0,1,google_trends
+gemini de google,19.0,0,1,google_trends
 prompt para ia,19.0,0,1,google_trends
+wordpress gratis,19.0,0,1,google_trends
+wordpress login,19.0,0,1,google_trends
+wordpress website,19.0,0,1,google_trends
+agentes digitalizadores kit digital,18.0,0,1,google_trends
+agentes valorant,18.0,0,1,google_trends
 chat gpt prompt,18.0,0,1,google_trends
+cif empresa,18.0,0,1,google_trends
 ia gpt,18.0,0,1,google_trends
 image to prompt,18.0,0,1,google_trends
+plugins wordpress,18.0,0,1,google_trends
 random-access memory,18.0,0,1,google_trends
 united states,18.0,0,1,google_trends
+agentes del cambio,17.0,0,1,google_trends
+blog,17.0,0,1,google_trends
 google translate,17.0,0,1,google_trends
 prompts,17.0,0,1,google_trends
+que es gemini,17.0,0,1,google_trends
+woocommerce,17.0,0,1,google_trends
+woocommerce wordpress,17.0,0,1,google_trends
+wordpress blog,17.0,0,1,google_trends
 youtube en español,17.0,0,1,google_trends
 youtube mp4,17.0,0,1,google_trends
 convertidor youtube mp3,16.0,0,1,google_trends
 descargar musica,16.0,0,1,google_trends
 descargar musica youtube,16.0,0,1,google_trends
-mobile app,16.0,0,1,google_trends
 chat gpt ia,15.0,0,1,google_trends
+context,15.0,0,1,google_trends
 ia de imagenes,15.0,0,1,google_trends
 tarjeta memoria,15.0,0,1,google_trends
+web empresa,15.0,0,1,google_trends
+contexto histórico,14.0,0,1,google_trends
 health,14.0,0,1,google_trends
+php,14.0,0,1,google_trends
 prompt generator,14.0,0,1,google_trends
 que es la ia,14.0,0,1,google_trends
-que es un prompt,14.0,0,1,google_trends
+tipos de ia,14.0,0,1,google_trends
+wordpress download,14.0,0,1,google_trends
 gemini ai deep research,13.0,0,1,google_trends
+gemini gratis,13.0,0,1,google_trends
 humanizador,13.0,0,1,google_trends
 humanizador ia,13.0,0,1,google_trends
 prompt para gemini,13.0,0,1,google_trends
+seo wordpress,13.0,0,1,google_trends
+contexto social,12.0,0,1,google_trends
 drive google,12.0,0,1,google_trends
 google flights,12.0,0,1,google_trends
+google gemini ai,12.0,0,1,google_trends
+llm,12.0,0,1,google_trends
+pagina web wordpress,12.0,0,1,google_trends
+plan de empresa,12.0,0,1,google_trends
 que es la memoria,12.0,0,1,google_trends
+santander empresa,12.0,0,1,google_trends
 tarjeta de memoria,12.0,0,1,google_trends
+amazon empresa,11.0,0,1,google_trends
+intelligence,11.0,0,2,google_trends
 map,11.0,0,1,google_trends
-system,11.0,0,1,google_trends
-text,11.0,0,2,google_trends
-application programming interface,10.0,0,2,google_trends
+gemini api,9.0,0,1,google_trends
 memory card,9.0,0,1,google_trends
+bbva empresa,8.0,0,1,google_trends
+certificado empresa sepe,8.0,0,1,google_trends
+contexto español,8.0,0,1,google_trends
+contexto juego,8.0,0,1,google_trends
+course,8.0,0,1,google_trends
 google fotos,8.0,0,1,google_trends
+logo empresa,8.0,0,1,google_trends
+sabadell empresa,8.0,0,1,google_trends
 traductor de google,8.0,0,1,google_trends
 chat gpt deep research,7.0,0,1,google_trends
 docs google,7.0,0,1,google_trends
 ejercicios memoria,7.0,0,1,google_trends
+gemini app,7.0,0,1,google_trends
+gemini online,7.0,0,1,google_trends
 google earth,7.0,0,1,google_trends
 memoria juegos,7.0,0,1,google_trends
+contexto sinonimo,6.0,0,1,google_trends
+copilot,6.0,0,1,google_trends
 detector,6.0,0,1,google_trends
+gemini fotos,6.0,0,1,google_trends
+gemini imagenes,6.0,0,1,google_trends
+gemini studio,6.0,0,1,google_trends
 google documentos,6.0,0,1,google_trends
 google gmail,6.0,0,1,google_trends
 google play,6.0,0,1,google_trends
@@ -365,8 +590,13 @@ exercise,5.0,0,1,google_trends
 google pixel,5.0,0,1,google_trends
 google scholar,5.0,0,1,google_trends
 google tiempo,5.0,0,1,google_trends
-install,5.0,0,1,google_trends
+install,5.0,0,2,google_trends
+labor,5.0,0,1,google_trends
+society,5.0,0,1,google_trends
 visual studio code,5.0,0,1,google_trends
+contexto comunicación,4.0,0,1,google_trends
+education,4.0,0,2,google_trends
+example,4.0,0,1,google_trends
 google chat,4.0,0,1,google_trends
 google map,4.0,0,1,google_trends
 google mapa,4.0,0,1,google_trends
@@ -377,14 +607,25 @@ memoria de madrid,4.0,0,1,google_trends
 memoria democrática,4.0,0,1,google_trends
 memoria externa,4.0,0,1,google_trends
 memoria sd,4.0,0,1,google_trends
+sinonimo de contexto,4.0,0,1,google_trends
+synonym,4.0,0,1,google_trends
+traductor contexto,4.0,0,1,google_trends
+web page,4.0,0,1,google_trends
 wikipedia,4.0,0,1,google_trends
+word,4.0,0,1,google_trends
 amnesia,3.0,0,1,google_trends
 central processing unit,3.0,0,1,google_trends
-computer file,3.0,0,1,google_trends
+communication,3.0,0,1,google_trends
+contexto en ingles,3.0,0,1,google_trends
+contexto game,3.0,0,1,google_trends
+contexto hoy,3.0,0,1,google_trends
+culture,3.0,0,1,google_trends
 disco duro,3.0,0,1,google_trends
 google docs,3.0,0,1,google_trends
 hard disk drive,3.0,0,1,google_trends
 historical culture,3.0,0,1,google_trends
+laborer,3.0,0,1,google_trends
+large language model,3.0,0,1,google_trends
 memoria de trabajo,3.0,0,1,google_trends
 memoria democratica,3.0,0,1,google_trends
 memoria historica,3.0,0,1,google_trends
@@ -392,10 +633,18 @@ memoria ssd,3.0,0,1,google_trends
 memory,3.0,0,1,google_trends
 mp3,3.0,0,1,google_trends
 perdida de memoria,3.0,0,1,google_trends
+politics,3.0,0,1,google_trends
 ssd,3.0,0,1,google_trends
+technology,3.0,0,1,google_trends
 usb flash drive,3.0,0,1,google_trends
+wordle,3.0,0,1,google_trends
+wordle contexto,3.0,0,1,google_trends
+contexto sinonimos,2.0,0,1,google_trends
+contract,2.0,0,1,google_trends
 electric generator,2.0,0,1,google_trends
 google drive,2.0,0,1,google_trends
 google photos,2.0,0,1,google_trends
+wordpress com,2.0,0,1,google_trends
+construction,1.0,0,1,google_trends
 human voice,1.0,0,1,google_trends
-intelligence,1.0,0,1,google_trends
+invoice,1.0,0,1,google_trends

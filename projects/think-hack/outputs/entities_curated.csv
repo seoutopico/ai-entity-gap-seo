@@ -1,138 +1,67 @@
 canonical_entity,type,posts,salience_sum,mid,decision,motivo
-ia,concept,31,4.9272,/m/0mkz,KEEP,Nucleo del brief: IA generativa como tema central
-chatgpt,tool,16,1.2167,/g/11khcfz0y2,KEEP,Entidad_nucleo; herramienta IA central del territorio
-memoria,concept,7,1.1138,/m/04rmb,KEEP,En el brief memoria=contexto IA; ya documentado anti_territorio RAM/cancion/videojuego
-contenido,other,9,1.0505,,KEEP,Brief: creacion de contenido con IA; concepto central
-deep research,concept,1,0.8775,/g/11l_323gkk,KEEP,Entidad_nucleo explicita; funcion de investigacion con IA
-datos,other,15,0.8767,,KEEP,Datos como input/output de IA; territorio de sistemas del brief
-modelo,other,10,0.854,,KEEP,Modelo de IA (LLM); concepto nuclear del territorio
-sistema,other,11,0.6722,,KEEP,"El brief enfatiza ""los sistemas"" como foco; concepto estructural del territorio"
-skill,other,2,0.6185,,KEEP,Skill de IA (Claude/Gemini); capacidad de los agentes; territorio del brief
-gpt-5 prompting guide,organization,1,0.5685,/g/11yt04s2gb,KEEP,Documento/recurso de prompting de OpenAI; territorio brief: prompting
-método,other,4,0.5251,,KEEP,"Foco del brief en sistemas y metodos, no trucos ni hype"
-claude code,tool,4,0.5212,,KEEP,Entidad_nucleo explicita; uso de IA para codigo en el territorio
-conversación,other,3,0.5174,,KEEP,Conversacion con IA; modo primario de interaccion del territorio
-prompt,concept,13,0.4861,,KEEP,Nucleo del territory; unidad de comunicacion con IA
-archivos,other,9,0.481,,KEEP,Archivos en sistemas IA (RAG/contexto); territorio del brief
-herramienta,other,14,0.4145,,KEEP,Herramientas IA; el brief trata sobre uso de herramientas con criterio
-nano banana pro gemini 3 pro,person,1,0.3351,,KEEP,Entidad_nucleo compuesta; modelo Gemini pro mencionado en brief
-youtube,platform,2,0.3331,/m/09jcvs,KEEP,Canal de distribucion de contenido relevante para creadores hispanohablantes
-audiencia,event,2,0.3043,,KEEP,Audiencia objetivo del contenido; estrategia de contenido del brief
-google,platform,1,0.2948,/m/045c7b,KEEP,"Plataforma detras de AI Overviews, Gemini, NotebookLM; central al territorio SEO/IA"
-sistema de escritura con ia,other,2,0.2935,/m/0844v,KEEP,Sistema especifico de escritura con IA; territorio central del brief
-creador,person,2,0.2884,,KEEP,Audiencia del brief: creadores de contenido que aplican IA
-procesos,other,5,0.2878,,KEEP,Brief: IA aplicada a procesos reales; entidad vertebral
-agentes,concept,4,0.2613,,KEEP,Entidad_nucleo explicita; agentes de IA en el territorio
-código,other,3,0.2107,,KEEP,Codigo generado con IA; territorio del brief
-newsletter,channel,11,0.1863,,KEEP,Entidad_nucleo; canal Think & Hack y formato de contenido
-empresa,organization,3,0.18,,KEEP,Empresa como contexto de aplicacion de IA; audiencia del brief
-ia generativa,concept,1,0.1788,/m/0mkz,KEEP,Entidad_nucleo explicita en el brief
-proyectos,other,5,0.1773,,KEEP,Plural de proyecto; mismo territorio
-borrador,other,1,0.1756,,KEEP,Borradores en flujos de escritura con IA; proceso de contenido del brief
-instrucciones,other,15,0.1735,,KEEP,Sinonimo operativo de prompts/reglas en sistemas IA; territorio del brief
-rol,other,4,0.171,,KEEP,Rol en prompting de IA (system prompt); territorio del brief
-claude projects,person,1,0.1616,,KEEP,Feature de Claude relacionada con gestion de contexto/memoria; nucleo del brief
-sesiones,event,2,0.1613,,KEEP,Sesiones de trabajo con IA; gestion de contexto en el brief
-contexto,concept,12,0.1556,,KEEP,Entidad_nucleo (memoria de contexto); gestion del contexto en IA
-wordpress,tool,1,0.1455,/m/02vtpl,KEEP,Entidad_nucleo; CMS de publicacion de contenido
-gemini,tool,5,0.1416,/g/11ts49p01g,KEEP,Entidad_nucleo; LLM de Google en el territorio
-seo summit,organization,1,0.1272,/m/019qb_,KEEP,Evento del sector SEO; territorio y audiencia del brief
-empresas,organization,4,0.1248,,KEEP,Plural de empresa; mismo territorio
-reglas,other,5,0.1137,,KEEP,Reglas en sistemas/prompts de IA; territorio del brief
-documentos,other,4,0.0956,,KEEP,Plural de documento; mismo territorio
-documento,other,3,0.0889,,KEEP,Documentos como input/output de IA; territorio del brief
-visibilidad,other,1,0.0887,,KEEP,Visibilidad organica; territorio SEO/GEO del brief
-ideas,other,7,0.0834,,KEEP,Generacion de ideas con IA; productividad creativa del brief
-modelos,other,5,0.0823,,KEEP,Plural de modelo IA; mismo territorio
-agente,concept,2,0.0784,,KEEP,Variante singular de agentes IA; mismo territorio
-chat,other,8,0.0733,,KEEP,Chat con IA (ChatGPT/Claude); interfaz nuclear del territorio
-investigación,other,2,0.0725,,KEEP,Investigacion con IA (deep research); territorio explicito del brief
-video,work_of_art,1,0.0695,,KEEP,Video como formato de contenido con IA; audiencia creadores del brief
-archivo,other,6,0.0662,,KEEP,Singular de archivos; mismo territorio
-gpt-5 2,other,1,0.0621,/g/11k9g_m6cg,KEEP,Variante de GPT-5; modelo OpenAI en el territorio
-brainstorming,other,1,0.061,/m/023mty,KEEP,Tecnica de productividad con IA; territorio del brief
-proyecto,other,7,0.0607,,KEEP,Proyectos de IA/Claude Projects; contexto de gestion del brief
-patrón,other,3,0.0518,,KEEP,Patrones de prompting/diseno de sistemas IA; territorio del brief
-rag notebooklm,other,1,0.0491,/g/11w2hkn8vj,KEEP,"RAG + NotebookLM; retrieval augmented generation, territorio agentes/sistemas IA"
-configuración,other,2,0.0469,,KEEP,Configuracion de herramientas IA; territorio de sistemas del brief
-herramientas,other,6,0.0468,,KEEP,Plural de herramienta; mismo territorio
-sesgo,other,2,0.0467,,KEEP,"Sesgos en IA; tema de uso con criterio, foco del brief"
-notebooklm,tool,2,0.041,/g/11vsw7nxj5,KEEP,Entidad_nucleo; herramienta de sintesis con IA de Google
-claude,tool,3,0.0405,/g/11kq5ghr35,KEEP,Entidad_nucleo; herramienta IA de Anthropic referenciada en newsletters
-vídeo,work_of_art,2,0.0386,,KEEP,Video como formato de contenido con IA; audiencia creadores del brief
-newsletters,other,6,0.0374,,KEEP,Plural de newsletter; mismo territorio de contenido
-fuente,other,4,0.0346,,KEEP,Fuentes en investigacion/RAG con IA; territorio del brief
-conversaciones,event,3,0.0335,,KEEP,Plural de conversacion; mismo territorio
-formato,other,5,0.0326,,KEEP,Formato de outputs de IA; relevante para contenido y SEO del brief
-prompts,other,4,0.0323,,KEEP,Plural de prompt; mismo territorio
-acceso,other,5,0.0301,,KEEP,Acceso a herramientas/modelos IA; contexto de uso del brief
-escritura,other,4,0.0292,,KEEP,Escritura con IA; territorio de creacion de contenido del brief
-navegador,consumer_good,1,0.0284,,KEEP,Navegador como entorno de trabajo con IA; herramientas del territorio
-json,other,6,0.027,/m/05cntt,KEEP,Formato de datos en automatizacion/n8n/agentes; territorio sistemas IA
-n8n,tool,1,0.0252,/g/11lp5nv8gz,KEEP,Entidad_nucleo explicita; automatizacion en el territorio
-adn,other,4,0.0238,,KEEP,Metafora de identidad de marca en prompting; tono pedagogico del brief
-nano banana,tool,1,0.0235,,KEEP,Variante canonica de nano banana pro; entidad_nucleo del brief; sentido IA no fruta
-gem,person,1,0.0235,,KEEP,Gems de Gemini: feature de personalizacion equivalente a GPTs/proyectos Claude
-patrones,other,6,0.0232,,KEEP,Plural de patron; mismo territorio
-imagen,other,2,0.0223,,KEEP,Imagen generada con IA; creacion de contenido en el brief
-miniaturas,other,1,0.0222,,KEEP,Miniaturas de YouTube con IA; contenido visual para creadores del brief
-fuentes,other,3,0.0218,,KEEP,Plural de fuente; mismo territorio
-estrategia,other,2,0.0205,,KEEP,Estrategia de contenido/SEO con IA; territorio del brief
-carpeta,other,3,0.0201,,KEEP,Organizacion de archivos en sistemas IA; territorio del brief
-transcripción,other,2,0.0199,,KEEP,Transcripcion con IA; territorio del brief
-asistente,person,4,0.0193,,KEEP,Asistente de IA; interfaz/rol en el territorio del brief
-casos,other,4,0.0192,,KEEP,Casos de uso de IA; pedagogia practica del brief
-sistemas,other,3,0.0189,,KEEP,Plural de sistema; mismo peso territorial
-títulos,other,1,0.0185,,KEEP,Titulos generados con IA para CTR; territorio SEO del brief
-análisis,other,7,0.0181,,KEEP,Analisis con IA; proceso de productividad en el territorio
-roles,other,1,0.0179,,KEEP,Plural de rol; mismo territorio de prompting
-pensamiento,other,2,0.017,,KEEP,"Pensamiento critico aplicado a IA; usar con criterio, foco del brief"
-trabajo,other,5,0.0162,,KEEP,"Trabajo con IA; productividad real, foco del brief"
-filosofía,other,1,0.0157,,KEEP,Filosofia detras del uso de IA; enfoque critico del brief
-idea,other,5,0.0153,,KEEP,Singular de ideas; mismo territorio
-razonamiento,other,3,0.0148,,KEEP,Razonamiento de LLMs; capacidad IA relevante en el territorio
-contexto 2,other,1,0.014,,KEEP,Variante de contexto; mismo territorio de memoria/contexto del brief
-paradoja,other,2,0.0139,,KEEP,Paradoja de la IA (#1 newsletter); framing conceptual del territorio
-ai overviews,concept,1,0.0139,/g/11x5rnx50d,KEEP,Entidad_nucleo explicita; fenomeno SEO de Google con IA
-llm,other,3,0.0132,/g/11kc9956b3,KEEP,Large Language Model; termino tecnico del territorio IA generativa
-aio,other,1,0.0127,,KEEP,Alias de AI Overviews; territorio SEO/GEO del brief
-webs,other,2,0.0126,,KEEP,Webs como objeto de SEO/GEO y scraping con IA; territorio del brief
-asistentes,person,1,0.0122,,KEEP,Plural de asistente; mismo territorio
-openai,other,1,0.0122,/g/11bxc656v6,KEEP,Entidad_nucleo; empresa detras de ChatGPT/GPT-5
-resultado,other,4,0.012,,KEEP,Resultados de aplicar IA; pedagogia practica del brief
-profesionales,person,1,0.012,,KEEP,Audiencia del brief: profesionales que aplican IA
-app,consumer_good,2,0.0119,,KEEP,Aplicacion de herramientas IA; recurrente en el territorio del brief
-proceso,other,3,0.0117,,KEEP,Singular de procesos; mismo territorio
-experimento,other,2,0.0113,,KEEP,Experimentos reales con IA; tono pedagogico del brief (guias + experimentos)
-api,other,2,0.0112,/m/0z5n,KEEP,API de LLMs; acceso a herramientas IA en el territorio tecnico del brief
-ctr,other,1,0.011,/m/06jmb1,KEEP,Entidad_nucleo explicita; metrica SEO clave
-título,other,1,0.0106,,KEEP,Singular de titulos; mismo territorio
-ugc,organization,1,0.0104,/m/0b4qkr,KEEP,User Generated Content; senal de calidad para SEO/GEO en el territorio
-web,other,2,0.01,,KEEP,Web como canal y objeto de trabajo; territorio SEO del brief
-product hunt,consumer_good,1,0.0098,/m/011cckvb,KEEP,Plataforma de lanzamiento de herramientas IA; territorio del brief
-insights,other,1,0.0097,,KEEP,Insights extraidos con IA de datos; productividad del brief
-chatbot,consumer_good,1,0.0097,,KEEP,Tipo de interfaz IA; territorio de herramientas del brief
-codex,tool,1,0.0096,/m/052yv,KEEP,Herramienta de codificacion de OpenAI; territorio IA/codigo del brief
-vídeos,work_of_art,3,0.0095,,KEEP,Plural de video; mismo territorio
-extensión,other,1,0.0094,,KEEP,Extension de navegador para IA; herramientas del territorio
-cliente,person,2,0.0092,,KEEP,Cliente en contexto de marketing/SEO con IA; audiencia del brief
-imágenes,other,1,0.0092,,KEEP,Plural de imagen; mismo territorio
-keywords,other,1,0.009,/m/07t6bn,KEEP,Termino SEO nuclear; territorio del brief
-nodo,other,1,0.0089,,KEEP,Nodo en flujos de automatizacion n8n; territorio del brief
-query,other,2,0.0088,,KEEP,Query de busqueda; territorio SEO del brief
-marketing,other,2,0.0086,/m/0g4gr,KEEP,Marketing de contenidos; audiencia del brief son marketers y SEOs
-calidad,other,3,0.0084,,KEEP,Calidad de outputs de IA; criterio explicito del brief
-reddit,organization,1,0.0084,/m/0b2334,KEEP,Fuente de senales y comunidad relevante para SEO/investigacion IA
-fricción,other,3,0.0082,,KEEP,Friccion en UX de herramientas IA; experiencia de uso del brief
-criterio,other,3,0.0081,,KEEP,El brief explicita usar IA con criterio propio; concepto identitario del territorio
-dato,other,3,0.008,,KEEP,Singular de datos; mismo territorio
-arquitectura,other,3,0.0078,,KEEP,Arquitectura de sistemas IA/agentes; territorio tecnico del brief
-flujo,other,3,0.0078,,KEEP,Workflows/flujos en automatizacion; territorio n8n/agentes del brief
-research,other,1,0.0078,,KEEP,"Research con IA; equivalente en ingles de investigacion, usado en el territory"
-urls,other,1,0.0075,,KEEP,URLs en SEO y scraping con IA; territorio del brief
-inbox,other,3,0.0074,,KEEP,Gestion de inbox con IA/automatizacion; productividad en el brief
-objetivo,other,2,0.0073,,KEEP,Objetivo en prompting/sistemas IA; concepto operativo del territorio
-podcast,other,2,0.0065,,KEEP,Podcast como formato de contenido; audiencia creadores del brief
-claude familia anthropic,person,1,0.0065,,KEEP,Familia de modelos Claude de Anthropic; entidad_nucleo expandida
-prompting,concept,1,0.0062,,KEEP,Entidad_nucleo explicita; core del territory
-colaboración,other,1,0.0061,,KEEP,Colaboracion humano-IA; mensaje recurrente del brief
+ia,concept,31,4.9272,/m/0mkz,KEEP,Concepto central del brief (IA generativa aplicada a productividad).
+chatgpt,tool,16,1.2167,/g/11khcfz0y2,KEEP,Herramienta IA en entidades_nucleo del brief.
+deep research,concept,1,0.8775,/g/11l_323gkk,KEEP,Herramienta/concepto en entidades_nucleo del brief.
+gpt-5 prompting guide,organization,1,0.5685,/g/11yt04s2gb,KEEP,Recurso prompting para GPT-5 (entidad_nucleo); territorio del brief.
+claude code,tool,4,0.5212,,KEEP,Herramienta IA en entidades_nucleo del brief.
+prompt,concept,13,0.4861,,KEEP,Elemento basico de prompting; nucleo del brief.
+nano banana pro gemini 3 pro,person,1,0.3351,,KEEP,Combinacion entidades_nucleo Nano Banana Pro + Gemini 3 Pro.
+youtube,platform,2,0.3331,/m/09jcvs,KEEP,Plataforma video/contenido; territorio del brief.
+google,platform,1,0.2948,/m/045c7b,KEEP,Motor busqueda central para SEO/AI Overviews; territorio del brief.
+sistema de escritura con ia,other,2,0.2935,/m/0844v,KEEP,Sistema produccion contenido IA; territorio productividad del brief.
+agentes,concept,4,0.2613,,KEEP,Agentes IA en entidades_nucleo del brief.
+newsletter,channel,11,0.1863,,KEEP,Canal en entidades_nucleo del brief.
+ia generativa,concept,1,0.1788,/m/0mkz,KEEP,Concepto nucleo explicito del brief.
+claude projects,tool,1,0.1616,,KEEP,Feature de Claude (entidad_nucleo) para gestion de contexto/memoria.
+contexto,concept,12,0.1556,,KEEP,Memoria/contexto en entidades_nucleo del brief.
+wordpress,tool,1,0.1455,/m/02vtpl,KEEP,CMS central en entidades_nucleo del brief.
+gemini,tool,5,0.1416,/g/11ts49p01g,KEEP,Herramienta IA en entidades_nucleo del brief.
+seo summit,organization,1,0.1272,/m/019qb_,KEEP,Evento SEO con visibilidad para territorio del brief.
+juan implementar ia,other,1,0.1143,,KEEP,Caso de implementacion IA en empresa; territorio del brief.
+agente,concept,2,0.0784,,KEEP,Agente IA; entidades_nucleo del brief.
+gpt-5 2,other,1,0.0621,/g/11k9g_m6cg,KEEP,Version de GPT-5 (entidad_nucleo); territorio del brief.
+brainstorming,other,1,0.061,/m/023mty,KEEP,Tecnica ideacion con IA; territorio prompting del brief.
+rag notebooklm,other,1,0.0491,/g/11w2hkn8vj,KEEP,RAG aplicado a NotebookLM (entidades_nucleo); territorio tecnico IA.
+notebooklm,tool,2,0.041,/g/11vsw7nxj5,KEEP,Herramienta IA en entidades_nucleo del brief.
+claude,tool,3,0.0405,/g/11kq5ghr35,KEEP,Herramienta IA en entidades_nucleo del brief.
+prompts,other,4,0.0323,,KEEP,Conjunto de prompts; nucleo del brief.
+json,other,6,0.027,/m/05cntt,KEEP,Formato datos usado en automatizaciones/agentes IA; territorio tecnico.
+n8n,tool,1,0.0252,/g/11lp5nv8gz,KEEP,Herramienta de automatizacion en entidades_nucleo del brief.
+nano banana,tool,1,0.0235,,KEEP,Producto en entidades_nucleo del brief.
+openai cookbook de los tres,organization,1,0.0184,,KEEP,Recurso oficial OpenAI sobre prompting/agentes; territorio del brief.
+razonamiento,other,3,0.0148,,KEEP,Capacidad reasoning LLMs; territorio tecnico IA del brief.
+ai overviews,concept,1,0.0139,/g/11x5rnx50d,KEEP,Concepto SEO/GEO en entidades_nucleo del brief.
+llm,other,3,0.0132,/g/11kc9956b3,KEEP,Modelo de lenguaje grande; base tecnica del territorio IA.
+aio,other,1,0.0127,,KEEP,AI Overviews (abrev.); concepto SEO del brief.
+openai,other,1,0.0122,/g/11bxc656v6,KEEP,Org creadora ChatGPT/GPT-5; entidad_nucleo del brief.
+api,other,2,0.0112,,KEEP,Interfaz programacion para integrar IA; territorio automatizacion del brief.
+ctr,other,1,0.011,/m/06jmb1,KEEP,Metrica SEO en entidades_nucleo del brief.
+ugc,organization,1,0.0104,/m/0b4qkr,KEEP,User Generated Content; estrategia contenido relevante para territorio del brief.
+chatbot,consumer_good,1,0.0097,,KEEP,Categoria herramienta IA conversacional; territorio del brief.
+codex,tool,1,0.0096,/m/052yv,KEEP,Herramienta de codigo IA (OpenAI) en entidades_nucleo del brief.
+reddit,organization,1,0.0084,/m/0b2334,KEEP,Plataforma comunidad y distribucion; territorio SEO/contenido del brief.
+claude familia anthropic,tool,1,0.0065,,KEEP,Familia de modelos Claude (entidad_nucleo); comparativas herramientas.
+prompting,concept,1,0.0062,,KEEP,Concepto nucleo del brief (criterio y sistemas de prompting).
+twitter,platform,1,0.0058,/m/045c7b,KEEP,Plataforma distribucion contenido; territorio del brief.
+linkedin,platform,3,0.0054,/m/03vgrr,KEEP,Plataforma distribucion contenido; territorio del brief.
+productividad,other,1,0.0048,,KEEP,Productividad con IA; objetivo explicito del brief.
+automatizaciones,consumer_good,1,0.0045,,KEEP,Automatizaciones con IA; territorio n8n/agentes del brief.
+gems de gemini,other,1,0.0036,,KEEP,Feature de Gemini (entidad_nucleo) para contexto personalizado.
+workflows,consumer_good,1,0.0034,,KEEP,Flujos automatizacion IA; territorio del brief.
+growth editor,other,1,0.0034,,KEEP,Rol/concepto en entidades_nucleo del brief.
+gpt,tool,1,0.0032,,KEEP,Familia de modelos OpenAI; entidad_nucleo del brief.
+subagentes,concept,1,0.0032,,KEEP,Subagentes IA en entidades_nucleo del brief.
+obsidian,tool,1,0.003,/g/11n007kbcy,KEEP,Herramienta PKM usada con IA; territorio productividad del brief.
+workflow,other,1,0.0029,,KEEP,Flujo automatizacion IA (n8n); territorio del brief.
+perplexity,tool,1,0.0025,,KEEP,Motor busqueda IA; territorio herramientas del brief.
+gpts,tool,1,0.0025,/g/11w1kjh448,KEEP,GPTs personalizados de OpenAI; territorio agentes del brief.
+grok,tool,1,0.0023,/g/11l6lp1dv3,KEEP,Modelo IA de xAI; comparativa herramientas en territorio del brief.
+chatbots,other,1,0.0023,,KEEP,Herramientas IA conversacionales; territorio del brief.
+chatgpt plus,other,1,0.0021,,KEEP,Tier de ChatGPT (entidad_nucleo); relevante para audiencia del brief.
+automatización,other,1,0.0018,,KEEP,Automatizacion con IA; objetivo del brief (productividad/sistemas).
+photoshop,tool,1,0.0018,/m/06710,KEEP,Herramienta creacion visual; pertenece al territorio contenido del brief.
+extractor ai overviews,consumer_good,1,0.0018,,KEEP,Herramienta para extraer datos de AI Overviews; territorio SEO/GEO.
+alucinaciones,other,1,0.0017,,KEEP,Limitacion critica de LLMs; posicion anti-hype del brief.
+embeddings,concept,1,0.0015,,KEEP,Tecnica vectorial base para search semantico; territorio IA del brief.
+llm s,other,1,0.0014,/g/11kc9956b3,KEEP,LLMs (plural); base tecnica del territorio IA.
+analista seo para ai overviews,organization,1,0.0011,,KEEP,Rol SEO especializado en AI Overviews; territorio del brief.
