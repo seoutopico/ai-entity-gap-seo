@@ -6,3 +6,10 @@ __pycache__/
 .claude/settings.local.json
 .obsidian/
 outputs/*.html
+.tmp/
+# Proyectos privados: al repo público solo van _template y think-hack (ejemplo).
+projects/*/
+!projects/_template/
+!projects/think-hack/
+# El golden es referencia local de la primera ejecución; no se publica.
+projects/think-hack/_golden/
